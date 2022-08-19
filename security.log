@@ -1,0 +1,24 @@
+2022-07-24 11:25:11,937 - ERROR - main - logger_security.error - Enter into the new_function()
+NoneType: None
+2022-07-24 11:25:11,937 - ERROR - main - logger_security.error - Enter into the main()
+2022-07-24 11:25:11,938 - ERROR - main - logger_security.error - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:27:09,055 - CRITICAL - main - logger_security.critical - Enter into the new_function()
+NoneType: None
+2022-07-24 11:27:09,055 - CRITICAL - main - logger_security.critical - Enter into the main()
+2022-07-24 11:27:09,056 - CRITICAL - main - logger_security.critical - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:55:53,856 - INFO - main - Check - logger_security.info - Enter into the new_function()
+NoneType: None
+2022-07-24 11:55:53,857 - INFO - main - Check - logger_security.info - Enter into the main()
+2022-07-24 11:55:53,857 - INFO - main - Check - logger_security.info - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'

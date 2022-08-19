@@ -1,0 +1,22 @@
+{% extends 'newsapp/base.html' %} {% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col" style="padding-top: 20px">
+      <div class="card">
+        <h5>Категория: {{post.postCategory}}</h5>
+        <p>Дата: {{post.dateCreation|date:"d-m-Y H:i:s"}}</p>
+        {% if post.photo %}
+        <img class="card-img-top" src="{{post.photo.url}}" alt="image" />
+        {% endif %}
+        <div class="card-body">
+          <h4 class="card-title">{{post.title}}</h4>
+          <p class="card-text">{{post.text|linebreaks}}</p>
+          <a href="#" target="_blank" class="btn btn-info">Подписаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

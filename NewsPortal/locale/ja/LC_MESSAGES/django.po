@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-31 11:35+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\newsapp\admin.py:46
+#, python-format
+msgid "%d публикация была отмечена как \"Опубликованная\"."
+msgid_plural "%d публикации были отмечены как \"Опубликованные\"."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\newsapp\admin.py:55
+#, python-format
+msgid "%d публикация была отправлена в архив."
+msgid_plural "%d публикации были отправлены в архив."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\newsapp\models.py:60
+msgid "slug назначится автоматически"
+msgstr ""
+
+#: .\newsapp\models.py:61
+msgctxt "for text in PostModel model"
+msgid "Текст поста (необязательно)"
+msgstr ""
+
+#: .\newsapp\models.py:62
+msgid ""
+"Введите здесь текст своего Поста, хотя можете и не вводить, если нет желания!"
+msgstr ""
+
+#: .\newsapp\templates\newsapp\index.html:35
+msgid "Category:"
+msgstr "カテゴリー："
+
+#: .\newsapp\templates\newsapp\index.html:36
+msgid "Date:"
+msgstr "日にち："
+
+#: .\newsapp\templates\newsapp\index.html:48
+msgid "Read the Post:"
+msgstr "投稿を読む:"
+
+#: .\newsapp\templates\newsapp\translation.html:27
+msgid "Check out my new cool translation"
+msgstr ""
+
+#: .\newsapp\views.py:240
+msgid "Hello world"
+msgstr ""

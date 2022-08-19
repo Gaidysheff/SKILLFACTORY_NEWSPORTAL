@@ -1,0 +1,7 @@
+print DEBUG message
+print INFO message
+print WARNING message
+print ERROR message
+print CRITICAL message
+Enter into the new_function()
+Enter into the main()

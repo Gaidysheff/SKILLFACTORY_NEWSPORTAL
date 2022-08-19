@@ -1,0 +1,73 @@
+2022-07-24 11:04:10,028 - CRITICAL - logger_request.critical - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:04:10,028 - CRITICAL - logger_request.critical - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:04:10,029 - CRITICAL - logger_request.critical - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x0000023C2C436380>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 73, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:05:03,826 - ERROR - logger_request.error - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:05:03,827 - ERROR - logger_request.error - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:05:03,827 - ERROR - logger_request.error - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x000001A25E964C80>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 73, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:07:22,075 - ERROR - logger_server.error - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:07:22,075 - ERROR - logger_server.error - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:07:22,076 - ERROR - logger_server.error - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x00000181169D6380>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 73, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:08:44,182 - CRITICAL - logger_server.critical - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:08:44,182 - CRITICAL - logger_server.critical - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:08:44,183 - CRITICAL - logger_server.critical - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x000001B358D87200>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:09:38,539 - CRITICAL - logger_template.critical - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:09:38,539 - CRITICAL - logger_template.critical - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:09:38,539 - CRITICAL - logger_template.critical - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x000001AFF82A3E80>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:10:37,468 - ERROR - logger_template.error - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:10:37,468 - ERROR - logger_template.error - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:10:37,468 - ERROR - logger_template.error - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x0000022CDBF97080>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+
+2022-07-24 11:43:15,065 - CRITICAL - logger_db_backends.critical - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:43:15,065 - CRITICAL - logger_db_backends.critical - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:43:15,065 - CRITICAL - logger_db_backends.critical - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x000002214A8F72C0>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 11:44:05,594 - ERROR - logger_db_backends.error - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 11:44:05,594 - ERROR - logger_db_backends.error - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 11:44:05,594 - ERROR - logger_db_backends.error - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x0000028075CB6380>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 74, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 12:49:21,687 - ERROR - EMAIL test through logger_request.error - Enter into the new_function() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (None, None, None)
+NoneType: None
+2022-07-24 12:49:21,687 - ERROR - EMAIL test through logger_request.error - Enter into the main() - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - None
+2022-07-24 12:49:21,688 - ERROR - EMAIL test through logger_request.error - Exception here, problem with item = 33 - c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py - (<class 'AttributeError'>, AttributeError("'int' object has no attribute 'split'"), <traceback object at 0x0000026CAC735D40>)
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'

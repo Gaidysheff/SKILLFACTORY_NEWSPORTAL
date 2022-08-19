@@ -1,0 +1,36 @@
+{% extends 'newsapp/base.html' %} {% block content %}
+
+<div class="container">
+  <div
+    class="badge bg-success text-wrap"
+    style="width: 40rem; font-size: 3em; padding: 0.2em; font-weight: 300"
+  >
+    {{title}}
+  </div>
+  <p></p>
+  <form
+    action="{% url 'add_page' %}"
+    method="post"
+    enctype="multipart/form-data"
+  >
+    {% csrf_token %}
+
+    <div class="form-error">{{ form.non_field_errors }}</div>
+
+    {% for f in form %}
+
+    <p>
+      <label class="form-label" style="width: 10rem" for="{{ f.id_for_label }}"
+        >{{f.label}}:</label
+      >
+      {{f}}
+    </p>
+
+    <div class="form-error">{{ f.errors }}</div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-success">Добавить</button>
+  </form>
+</div>
+
+{% endblock content %}

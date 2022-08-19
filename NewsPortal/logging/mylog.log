@@ -1,0 +1,16 @@
+DEBUG:root:Enter into the main() function: name = oleg
+DEBUG:root:Enter into the main() function: name = my test
+print DEBUG message
+print INFO message
+print WARNING message
+print ERROR message
+print CRITICAL message
+Enter into the new_function()
+Enter into the main()
+2022-07-23 18:15:27,683 - DEBUG - django - print DEBUG message
+2022-07-23 18:15:27,683 - INFO - django - print INFO message
+2022-07-23 18:15:27,684 - WARNING - django - print WARNING message
+2022-07-23 18:15:27,684 - ERROR - django - print ERROR message
+2022-07-23 18:15:27,684 - CRITICAL - django - print CRITICAL message
+2022-07-23 18:15:27,685 - DEBUG - django - Enter into the new_function()
+2022-07-23 18:15:27,685 - DEBUG - django - Enter into the main()

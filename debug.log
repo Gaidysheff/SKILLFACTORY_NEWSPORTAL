@@ -1,0 +1,105 @@
+2022-07-24 16:37:38,326 - ERROR - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:38:23,148 - ERROR - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:38:23,150 - ERROR - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:38:23,151 - ERROR - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:39:07,527 - CRITICAL - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:39:07,529 - CRITICAL - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:39:07,531 - CRITICAL - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:39:29,806 - WARNING - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:39:29,808 - WARNING - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:39:29,809 - WARNING - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:39:49,609 - INFO - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:39:49,610 - INFO - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:39:49,612 - INFO - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:40:05,925 - DEBUG - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:40:05,926 - DEBUG - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:40:05,928 - DEBUG - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:46:43,560 - ERROR - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:46:43,562 - ERROR - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:46:43,564 - ERROR - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:47:37,150 - ERROR - main - CustomHandler test through "django" logger - Enter into the new_function()
+NoneType: None
+2022-07-24 16:47:37,152 - ERROR - main - CustomHandler test through "django" logger - Enter into the main()
+2022-07-24 16:47:37,154 - ERROR - main - CustomHandler test through "django" logger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 77, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 16:57:11,037 - DEBUG - main - CustomHandler + CustomFilter + CustomLogger test - Enter into the new_function()
+NoneType: None
+2022-07-24 16:57:11,038 - DEBUG - main - CustomHandler + CustomFilter + CustomLogger test - Enter into the main()
+2022-07-24 16:57:11,039 - DEBUG - main - CustomHandler + CustomFilter + CustomLogger - Exception here, problem with item = 33
+Traceback (most recent call last):
+  File "c:/Users/admin/VisualStudion Folder/TEST-NEWSPORTAL-noM2M/NewsPortal/logging/main.py", line 81, in function
+    print(item.split(' '))
+AttributeError: 'int' object has no attribute 'split'
+2022-07-24 17:02:02,603 - INFO - main - CustomHandler + CustomFilter + CustomLogger test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:07:26,185 - INFO - main  - new_function - 63 - CustomHandler + CustomFilter + CustomLogger test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:08:44,903 - INFO - main  - new_function - 63 - CustomHandler + CustomFilter + CustomLogger test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:09:14,800 - INFO - main  - new_function - 63 - CustomHandler + CustomFilter + CustomLogger test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:10:09,519 - ERROR - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:10:50,916 - WARNING - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:11:05,395 - CRITICAL - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:14:05,381 - CRITICAL - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:14:05,383 - CRITICAL - main  - main - 69 - CustomHandler + CustomFilter + CustomLogger test - Enter into the main()
+2022-07-24 17:15:15,769 - ERROR - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function()
+NoneType: None
+2022-07-24 17:15:15,770 - ERROR - main  - main - 69 - CustomHandler + CustomFilter + CustomLogger test - Enter into the main()
+2022-07-24 17:24:45,223 - WARNING - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - varia
+NoneType: None
+2022-07-24 17:28:03,022 - CRITICAL - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - œ–» ›“Œ… œ≈–≈Ã≈ÕÕŒ… ¬Œ«Õ» ¿≈“ Œÿ»¡ ¿
+NoneType: None
+2022-07-24 17:29:19,093 - CRITICAL - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - œ–» ›“Œ… œ≈–≈Ã≈ÕÕŒ… ¬Œ«Õ» ¿≈“ Œÿ»¡ ¿ - VARIA
+NoneType: None
+2022-07-24 17:30:29,652 - CRITICAL - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - This variable makes the PROBLEM - VARIA
+NoneType: None
+2022-07-24 17:32:39,918 - ERROR - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - This variable makes the PROBLEM - VARIA
+NoneType: None
+2022-07-24 17:33:09,135 - DEBUG - main  - new_function - 63 - "CustomHandler+CustomFilter+CustomLogger+CustomFormatter" test - Enter into the new_function() - This variable makes the PROBLEM - VARIA
+NoneType: None
+2022-07-24 17:34:40,046 - INFO - main  - new_function - 63 - test - Enter into the new_function() - This variable makes the PROBLEM - eugene
+NoneType: None
+2022-07-24 18:15:32,777 - INFO - main  - new_function - 63 - test - Enter into the new_function() - This variable makes the PROBLEM - eugene
+NoneType: None

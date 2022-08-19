@@ -1,0 +1,22 @@
+{% extends 'newsapp/base.html' %} {% block content %}
+<h1>{{title}}</h1>
+Содержимое страницы о сайте
+<!-- Просто пробник пагинации через функцию -->
+<h1>ПРОСТО ПОКА ПРОБНИК ПРИМИТИВНОЙ ПАГИНАЦИИ ЧЕРЕЗ ФУНКЦИЮ</h1>
+{% for contact in page_obj %}
+<p>{{ contact }}</p>
+{% endfor %}
+
+<nav>
+  <ul>
+    {% for p in page_obj.paginator.page_range %}
+    <li>
+      <a href="?page={{ p }}">{{ p }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<!-- -------------------------------------- -->
+
+{% endblock %}

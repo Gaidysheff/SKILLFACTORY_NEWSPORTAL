@@ -1,0 +1,16 @@
+<p class="fw-light">{% for c in cats %}</p>
+
+<p class="fw-light">{% if c.pk == cat_selected %}</p>
+
+<p class="font-weight-bold">{{c.name}}</p>
+
+{% else %}
+
+<a
+  href="{{ c.get_absolute_url }}"
+  class="btn btn-outline-dark"
+  style="width: 150px"
+  >{{c.name}}</a
+>
+
+{% endif %} {% endfor %}
