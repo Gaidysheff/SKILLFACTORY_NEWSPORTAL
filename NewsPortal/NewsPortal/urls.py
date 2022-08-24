@@ -24,7 +24,7 @@ from newsapp.views import (
     about, archive,  contact, pageNotFound,
     PostsHome, PostCategory, ShowPost, AddPage,
     SignUpUser, LoginUser, logout_user, Index,
-    set_timezone, PostAPIView,
+    set_timezone, PostAPIView, SubscribeView,
 )
 
 
@@ -35,6 +35,7 @@ urlpatterns = [
          PostCategory.as_view(), name='category'),
     path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),
     path('addpage/', AddPage.as_view(), name='add_page'),
+    path('subscribe', SubscribeView.as_view(), name="subscribe"),
 
     # --------------------------------------------------------------------------------
     path('about/', about, name='about'),

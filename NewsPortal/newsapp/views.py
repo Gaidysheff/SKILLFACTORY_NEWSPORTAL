@@ -131,7 +131,13 @@ def set_timezone(request):
         return render(request, 'base.html', context)
 
 
+class SubscribeView(CreateView):
+    model = Subscribe
+    form_class = SubscribeForm
+    success_url = reverse_lazy('home')
+
 # --------------Dgango REST Framework--------------------
+
 
 class PostAPIView(APIView):
 

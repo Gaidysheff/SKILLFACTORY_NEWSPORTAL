@@ -145,3 +145,14 @@ class Comments(models.Model):
 
     def __str__(self):
         return f'{self.text[:10]}...'
+
+# ---------------------------------------------------------------
+    """ Подписка по e-mail"""
+
+
+class Subscribe(models.Model):
+    email = models.EmailField()
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

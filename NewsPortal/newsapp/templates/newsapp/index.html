@@ -1,6 +1,7 @@
 {% extends 'newsapp/base.html' %} {% block content %}
 {% load i18n %}
-{% load tz %} 
+{% load tz %}
+{% load newsapp_tags %} 
 
 <div class="container text-right" style="margin-left: 5px; width: 450px">
   <!-- Translation --> 
@@ -74,5 +75,6 @@
 </div>
 
 <hr />
+
 
 {% endblock %}

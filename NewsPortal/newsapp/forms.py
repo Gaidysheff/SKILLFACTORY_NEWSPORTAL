@@ -49,7 +49,7 @@ class SignUpUserForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2', )
 
 
 class LoginFormUser(AuthenticationForm):
@@ -57,3 +57,18 @@ class LoginFormUser(AuthenticationForm):
         attrs={'class': 'form-control'})),
     password = forms.CharField(label='Пароль:', widget=forms.PasswordInput(
         attrs={'class': 'form-control'})),
+
+
+class SubscribeForm(forms.ModelForm):
+    email = forms.EmailField(
+        label='E-mail',
+        widget=forms.EmailInput(attrs={
+            'class': 'form-input',
+            'size': 30,
+            'placeholder': "Your email ...",
+        })
+    )
+
+    class Meta:
+        model = Subscribe
+        fields = ('email', )
