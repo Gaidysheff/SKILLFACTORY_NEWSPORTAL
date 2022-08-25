@@ -19,7 +19,7 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils import timezone
-
+from django.contrib.auth.decorators import login_required
 
 from .forms import *
 from .models import *
@@ -131,10 +131,12 @@ def set_timezone(request):
         return render(request, 'base.html', context)
 
 
-class SubscribeView(CreateView):
+class SubscribeView(LoginRequiredMixin, CreateView):
     model = Subscribe
     form_class = SubscribeForm
     success_url = reverse_lazy('home')
+    login_url = reverse_lazy('login')
+    # raise_exception = True
 
 # --------------Dgango REST Framework--------------------
 
