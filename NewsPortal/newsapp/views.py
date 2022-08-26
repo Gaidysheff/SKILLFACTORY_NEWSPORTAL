@@ -30,9 +30,9 @@ class PostsHome(DataMixin, ListView):
     model = Post
     template_name = 'newsapp/index.html'
     context_object_name = 'posts'
-    curent_time = timezone.now()
 
     def get_context_data(self, *, object_list=None, **kwargs):
+        curent_time = timezone.now()
         context = super().get_context_data(**kwargs)
         c_def = self.get_user_context(title="Главная страница")
         return dict(list(context.items()) + list(c_def.items()))
@@ -41,22 +41,27 @@ class PostsHome(DataMixin, ListView):
         return Post.objects.filter(status='p')
         # Отображаю только опубликованные (без черновиков и архива)
 
+        # по пост-запросу будем добавлять в сессию часовой пояс, который и будет обрабатываться написанным нами ранее middleware
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('home')
+
 
 class PostCategory(DataMixin, ListView):
     model = Post
-    template_name = 'newsapp/index.html'
+    template_name = 'newsapp/cat_index.html'
     context_object_name = 'posts'
     allow_empty = False
-
-    def get_queryset(self):
-        return Post.objects.filter(postCategory__slug=self.kwargs['postCategory_slug'], status='p')
-        # Отображаю только опубликованные (без черновиков и архива)
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         c_def = self.get_user_context(
             title='Категория - ' + str(context['posts'][0].postCategory), cat_selected=context['posts'][0].postCategory_id)
         return dict(list(context.items()) + list(c_def.items()))
+
+    def get_queryset(self):
+        return Post.objects.filter(postCategory__slug=self.kwargs['postCategory_slug'], status='p')
+        # Отображаю только опубликованные (без черновиков и архива)
 
 
 class ShowPost(DataMixin, DetailView):
@@ -137,6 +142,36 @@ class SubscribeView(LoginRequiredMixin, CreateView):
     success_url = reverse_lazy('home')
     login_url = reverse_lazy('login')
     # raise_exception = True
+
+
+class CatSubscribeView(LoginRequiredMixin, CreateView):
+    form_class = CatSubscribeForm
+    model = CatSubscribe
+    template_name = 'cat_subscribe.html'
+    success_url = 'home'
+    # context_object_name = 'sign/subscribe'
+
+    def form_valid(self, form):
+        form.instance.subscriber = User.objects.get(id=self.request.user.id)
+        if Subscribe.objects.filter(category=form.instance.category, subscriber=form.instance.subscriber):
+            return super(CatSubscribeView, self).form_invalid(form)
+        else:
+            return super(CatSubscribeView, self).form_valid(form)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['mysubscribes'] = Subscribe.objects.filter(
+            subscriber=User.objects.get(id=self.request.user.id))
+        print(Subscribe.objects.filter(
+            subscriber=User.objects.get(id=self.request.user.id)))
+        return context
+
+
+class UnSubscribeView(LoginRequiredMixin, DeleteView):
+    model = CatSubscribe
+    template_name = 'unsubscribe.html'
+    success_url = reverse_lazy('subscription')
+
 
 # --------------Dgango REST Framework--------------------
 

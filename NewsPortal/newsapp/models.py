@@ -156,3 +156,13 @@ class Subscribe(models.Model):
 
     def __str__(self):
         return self.email
+
+
+class CatSubscribe(models.Model):
+    subscriber = models.ForeignKey(
+        User, verbose_name="Имя подписчика", on_delete=models.CASCADE)
+    category = models.ForeignKey(
+        Category, verbose_name="Категория", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.subscriber

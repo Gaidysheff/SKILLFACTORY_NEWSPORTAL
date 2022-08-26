@@ -1,8 +1,10 @@
 from django.utils import timezone
+from django.shortcuts import render
 from django.shortcuts import redirect
 from .models import *
 from django.db.models import Count
 import pytz
+from pytz import common_timezones
 
 
 menu = [{'title': "О сайте", 'url_name': 'about'},
@@ -39,21 +41,22 @@ class DataMixin:
 
     #  по пост-запросу будем добавлять в сессию часовой пояс, который и будет обрабатываться написанным нами ранее middleware
     """ Расскомментирование даёт сбой на авторизацию пользователя"""
+
     # def post(self, request):
-    #     request.session['django_timezone'] = request.POST['timezone']
+    #     request.session['django_timezone'] = request.POST.get(
+    #         'timezone', 'Europe/Moscow')
     #     return redirect('home')
 
+    #    _____ вариант без исчезновения "Добавить статью" из меню для неавторизованного пользователя ___
 
-#    _____ вариант без исчезновения "Добавить статью" из меню для неавторизованного пользователя ___
-
-# class DataMixin:
-#     paginate_by = 3
-#
-#     def get_user_context(self, **kwargs):
-#         context = kwargs
-#         cats = Category.objects.all()
-#         context['menu'] = menu
-#         context['cats'] = cats
-#         if 'cat_selected' not in context:
-#             context['cat_selected'] = 0
-#         return context
+    # class DataMixin:
+    #     paginate_by = 3
+    #
+    #     def get_user_context(self, **kwargs):
+    #         context = kwargs
+    #         cats = Category.objects.all()
+    #         context['menu'] = menu
+    #         context['cats'] = cats
+    #         if 'cat_selected' not in context:
+    #             context['cat_selected'] = 0
+    #         return context

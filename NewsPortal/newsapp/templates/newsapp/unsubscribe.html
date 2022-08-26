@@ -1,0 +1,10 @@
+{% extends 'index.html' %} {% block title %} Управление подпиской {% endblock
+title %} {% block content %}
+<h1>Отписаться</h1>
+<hr />
+<form action="" method="post">
+  {% csrf_token %}
+  <p>Отписаться "{{ object }}"?</p>
+  <input type="submit" value="Отписаться" />
+</form>
+{% endblock content %}

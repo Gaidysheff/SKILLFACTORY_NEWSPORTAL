@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block title %}
+Управление подпиской
+{% endblock title %}
+
+{% block content %}
+<h1> Подписаться на новости из категории </h1>
+<hr>
+<h2> Вы подписаны на категории: </h2>
+{% for sub in mysubscribes %}
+<p><td>{{sub.category}}</td> <td><a href="{{ sub.get_absolute_url }}" отписаться </a></td></p>
+{% endfor %}
+<hr>
+<form action="" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" value="Подписаться"/>
+</form>
+{% endblock content %}
