@@ -39,14 +39,6 @@ class DataMixin:
 
         return context
 
-    #  по пост-запросу будем добавлять в сессию часовой пояс, который и будет обрабатываться написанным нами ранее middleware
-    """ Расскомментирование даёт сбой на авторизацию пользователя"""
-
-    # def post(self, request):
-    #     request.session['django_timezone'] = request.POST.get(
-    #         'timezone', 'Europe/Moscow')
-    #     return redirect('home')
-
     #    _____ вариант без исчезновения "Добавить статью" из меню для неавторизованного пользователя ___
 
     # class DataMixin:

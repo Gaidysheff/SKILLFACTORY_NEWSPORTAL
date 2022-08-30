@@ -32,7 +32,6 @@ class PostsHome(DataMixin, ListView):
     context_object_name = 'posts'
 
     def get_context_data(self, *, object_list=None, **kwargs):
-        curent_time = timezone.now()
         context = super().get_context_data(**kwargs)
         c_def = self.get_user_context(title="Главная страница")
         return dict(list(context.items()) + list(c_def.items()))
@@ -41,7 +40,8 @@ class PostsHome(DataMixin, ListView):
         return Post.objects.filter(status='p')
         # Отображаю только опубликованные (без черновиков и архива)
 
-        # по пост-запросу будем добавлять в сессию часовой пояс, который и будет обрабатываться написанным нами ранее middleware
+        # по пост-запросу будем добавлять в сессию часовой пояс,
+        # который и будет обрабатываться написанным нами ранее middleware
     def post(self, request):
         request.session['django_timezone'] = request.POST['timezone']
         return redirect('home')
@@ -144,33 +144,33 @@ class SubscribeView(LoginRequiredMixin, CreateView):
     # raise_exception = True
 
 
-class CatSubscribeView(LoginRequiredMixin, CreateView):
-    form_class = CatSubscribeForm
-    model = CatSubscribe
-    template_name = 'cat_subscribe.html'
+class CategorySubscribeView(LoginRequiredMixin, CreateView):
+    form_class = CategorySubscribeForm
+    model = CategorySubscribe
+    template_name = 'newsapp/subscribe_category.html'
     success_url = 'home'
     # context_object_name = 'sign/subscribe'
 
     def form_valid(self, form):
-        form.instance.subscriber = User.objects.get(id=self.request.user.id)
-        if Subscribe.objects.filter(category=form.instance.category, subscriber=form.instance.subscriber):
-            return super(CatSubscribeView, self).form_invalid(form)
+        form.instance.subscriber = User.objects.get(id=self.request.user_id)
+        if CategorySubscribe.objects.filter(category=form.instance.category, subscriber=form.instance.subscriber):
+            return super(CategorySubscribeView, self).form_invalid(form)
         else:
-            return super(CatSubscribeView, self).form_valid(form)
+            return super(CategorySubscribeView, self).form_valid(form)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['mysubscribes'] = Subscribe.objects.filter(
+        context['mysubscribes'] = CategorySubscribe.objects.filter(
             subscriber=User.objects.get(id=self.request.user.id))
-        print(Subscribe.objects.filter(
+        print(CategorySubscribe.objects.filter(
             subscriber=User.objects.get(id=self.request.user.id)))
         return context
 
 
 class UnSubscribeView(LoginRequiredMixin, DeleteView):
-    model = CatSubscribe
+    model = CategorySubscribe
     template_name = 'unsubscribe.html'
-    success_url = reverse_lazy('subscription')
+    success_url = reverse_lazy('home')
 
 
 # --------------Dgango REST Framework--------------------

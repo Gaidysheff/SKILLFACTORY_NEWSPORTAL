@@ -106,6 +106,8 @@ class Category(models.Model):
     name = models.CharField(max_length=64, unique=True)
     slug = models.SlugField(max_length=255, unique=True,
                             db_index=True, verbose_name='URL')
+    subscriber = models.ManyToManyField(
+        User, through='CategorySubscribe', blank=True,)
 
     class Meta:
         verbose_name = 'Категория'
@@ -146,8 +148,7 @@ class Comments(models.Model):
     def __str__(self):
         return f'{self.text[:10]}...'
 
-# ---------------------------------------------------------------
-    """ Подписка по e-mail"""
+# --------Подписка по e-mail на все категории---------------------
 
 
 class Subscribe(models.Model):
@@ -158,11 +159,20 @@ class Subscribe(models.Model):
         return self.email
 
 
-class CatSubscribe(models.Model):
+# # --------Подписка по e-mail на индивидуальную категорию----------
+
+# class CategorySubscriber(models.Model):
+#     subscriber_thru = models.ForeignKey(
+#         User, on_delete=models.CASCADE, blank=True, null=True,)
+#     category_thru = models.ForeignKey(
+#         Category, on_delete=models.CASCADE, blank=True, null=True,)
+
+
+class CategorySubscribe(models.Model):
     subscriber = models.ForeignKey(
         User, verbose_name="Имя подписчика", on_delete=models.CASCADE)
     category = models.ForeignKey(
         Category, verbose_name="Категория", on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.subscriber
+        return self.subscriber_through

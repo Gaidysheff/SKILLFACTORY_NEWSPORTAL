@@ -67,16 +67,15 @@ class SubscribeForm(forms.ModelForm):
             'class': 'form-input',
             'size': 30,
             'placeholder': "Your email ...",
-        })
-    )
+        }))
 
     class Meta:
         model = Subscribe
         fields = ('email', )
 
 
-class CatSubscribeForm(forms.ModelForm):
-    email = forms.EmailField(
+class CategorySubscribeForm(forms.ModelForm):
+    subscriber = forms.EmailField(
         label='E-mail',
         widget=forms.EmailInput(
             attrs={'class': 'form-input', 'size': 30, 'placeholder': "Your email ...", })
@@ -85,5 +84,5 @@ class CatSubscribeForm(forms.ModelForm):
         label='Категория', widget=forms.TextInput(attrs={'class': 'form-input'})),
 
     class Meta:
-        model = CatSubscribe
-        fields = ('email', 'category',)
+        model = CategorySubscribe
+        fields = ('subscriber', 'category',)
