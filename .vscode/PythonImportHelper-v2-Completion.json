@@ -58,6 +58,22 @@
         "documentation": {}
     },
     {
+        "label": "Celery",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
+        "label": "shared_task",
+        "importPath": "celery",
+        "description": "celery",
+        "isExtraImport": true,
+        "detail": "celery",
+        "documentation": {}
+    },
+    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -814,6 +830,15 @@
         "documentation": {}
     },
     {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -1030,6 +1055,15 @@
         "description": "NewsPortal.NewsPortal.asgi",
         "peekOfCode": "application = get_asgi_application()",
         "detail": "NewsPortal.NewsPortal.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.celery",
+        "description": "NewsPortal.NewsPortal.celery",
+        "peekOfCode": "app = Celery('NewsPortal') \napp.config_from_object('django.conf:settings', namespace = 'CELERY') \napp.autodiscover_tasks()",
+        "detail": "NewsPortal.NewsPortal.celery",
         "documentation": {}
     },
     {
@@ -1280,7 +1314,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "EMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "EMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1289,7 +1323,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "EMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "EMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1298,7 +1332,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "EMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "EMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1307,7 +1341,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "SERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "SERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1316,7 +1350,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "DEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1325,7 +1359,52 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "LOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "peekOfCode": "LOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_BROKER_URL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "CELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_RESULT_BACKEND",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "CELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_ACCEPT_CONTENT",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "CELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_TASK_SERIALIZER",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "CELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CELERY_RESULT_SERIALIZER",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "CELERY_RESULT_SERIALIZER = 'json'",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1768,6 +1847,15 @@
         "description": "NewsPortal.newsapp.serializers",
         "peekOfCode": "class PostSerializer(serializers.Serializer):\n    categoryType = serializers.CharField(read_only=True)\n    dateCreation = serializers.DateTimeField(read_only=True)\n    postCategory_id = serializers.IntegerField(read_only=True)\n    # катерогии уже определено числовое значение id в моделе\n    title = serializers.CharField(max_length=255)\n    slug = serializers.SlugField(read_only=True)\n    text = serializers.CharField()\n    photo = serializers.ImageField(read_only=True)\n    rating = serializers.IntegerField(default=0)",
         "detail": "NewsPortal.newsapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.tasks",
+        "description": "NewsPortal.newsapp.tasks",
+        "peekOfCode": "def hello(): \n\ttime.sleep(10) \n\tprint(\"Hello, world!\")",
+        "detail": "NewsPortal.newsapp.tasks",
         "documentation": {}
     },
     {
