@@ -25,7 +25,8 @@ from newsapp.views import (
     PostsHome, PostCategory, ShowPost, AddPage,
     SignUpUser, LoginUser, logout_user, Index,
     set_timezone, PostAPIView, SubscribeView,
-    CategorySubscribeView, UnSubscribeView,
+    # CategorySubscribeView,
+    UnSubscribeView, category_subscription,
 )
 
 
@@ -37,8 +38,9 @@ urlpatterns = [
     path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),
     path('addpage/', AddPage.as_view(), name='add_page'),
     path('subscribe/', SubscribeView.as_view(), name='subscribe'),
-    path('sign/category_subscribe/',
-         CategorySubscribeView.as_view(), name='catsubscribe'),
+    path('catsubscribe/', category_subscription, name='catsubscribe'),
+    # path('sign/category_subscribe/',
+    #      CategorySubscribeView.as_view(), name='catsubscribe'),
     path('sign/<int:pk>/unsubscribe',
          UnSubscribeView.as_view(), name='unsubscribe'),
 

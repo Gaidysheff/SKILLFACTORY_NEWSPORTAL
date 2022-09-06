@@ -1,6 +1,6 @@
 from django import template
 from newsapp.models import *
-from newsapp.forms import SubscribeForm
+from newsapp.forms import SubscribeForm, CategorySubscribeForm
 
 
 register = template.Library()
@@ -27,3 +27,8 @@ def show_categories(sort=None, cat_selected=0):
 @register.inclusion_tag('newsapp/subscribe_form.html')
 def subscribe_form():
     return{"subscribe_form": SubscribeForm()}
+
+
+@register.inclusion_tag('newsapp/category_subscription.html')
+def category_subscribe_form():
+    return{"category_subscribe_form": CategorySubscribeForm()}

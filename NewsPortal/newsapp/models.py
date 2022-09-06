@@ -106,8 +106,8 @@ class Category(models.Model):
     name = models.CharField(max_length=64, unique=True)
     slug = models.SlugField(max_length=255, unique=True,
                             db_index=True, verbose_name='URL')
-    subscriber = models.ManyToManyField(
-        User, through='CategorySubscribe', blank=True,)
+    # subscriber = models.ManyToManyField(
+    #     User, through='CategorySubscribe', blank=True, related_name='category')
 
     class Meta:
         verbose_name = 'Категория'
@@ -169,10 +169,9 @@ class Subscribe(models.Model):
 
 
 class CategorySubscribe(models.Model):
-    subscriber = models.ForeignKey(
-        User, verbose_name="Имя подписчика", on_delete=models.CASCADE)
-    category = models.ForeignKey(
-        Category, verbose_name="Категория", on_delete=models.CASCADE)
+    subscriber = models.EmailField()
+    # subscriber = models.OneToOneField(User, on_delete=models.CASCADE)
+    categorySubscribed = models.ManyToManyField(Category)
 
     def __str__(self):
-        return self.subscriber_through
+        return self.subscriber

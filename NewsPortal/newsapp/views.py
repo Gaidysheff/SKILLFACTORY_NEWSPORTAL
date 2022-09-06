@@ -144,27 +144,41 @@ class SubscribeView(LoginRequiredMixin, CreateView):
     # raise_exception = True
 
 
-class CategorySubscribeView(LoginRequiredMixin, CreateView):
-    form_class = CategorySubscribeForm
-    model = CategorySubscribe
-    template_name = 'newsapp/subscribe_category.html'
-    success_url = 'home'
-    # context_object_name = 'sign/subscribe'
-
-    def form_valid(self, form):
-        form.instance.subscriber = User.objects.get(id=self.request.user_id)
-        if CategorySubscribe.objects.filter(category=form.instance.category, subscriber=form.instance.subscriber):
-            return super(CategorySubscribeView, self).form_invalid(form)
+def category_subscription(request):
+    if request.method == 'POST':
+        form = CategorySubscribeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # return HttpResponse(f'<h2> Вы подписались на данную категорию</h2>')
+            return redirect('home')
         else:
-            return super(CategorySubscribeView, self).form_valid(form)
+            return HttpResponse('Invalid data')
+    else:
+        form = CategorySubscribeForm()
+        return render(request, 'newsapp/category_subscription.html', {'category_subscription': form})
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['mysubscribes'] = CategorySubscribe.objects.filter(
-            subscriber=User.objects.get(id=self.request.user.id))
-        print(CategorySubscribe.objects.filter(
-            subscriber=User.objects.get(id=self.request.user.id)))
-        return context
+
+# class CategorySubscribeView(LoginRequiredMixin, CreateView):
+#     form_class = CategorySubscribeForm
+#     model = CategorySubscribe
+#     template_name = 'newsapp/subscribe_category.html'
+#     success_url = 'home'
+#     # context_object_name = 'sign/subscribe'
+
+#     def form_valid(self, form):
+#         form.instance.subscriber = User.objects.get(id=self.request.user_id)
+#         if CategorySubscribe.objects.filter(categorySubscribed=form.instance.categorySubscribed, subscriber=form.instance.subscriber):
+#             return super(CategorySubscribeView, self).form_invalid(form)
+#         else:
+#             return super(CategorySubscribeView, self).form_valid(form)
+
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         context['mysubscribes'] = CategorySubscribe.objects.filter(
+#             subscriber=User.objects.get(id=self.request.user.id))
+#         print(CategorySubscribe.objects.filter(
+#             subscriber=User.objects.get(id=self.request.user.id)))
+#         return context
 
 
 class UnSubscribeView(LoginRequiredMixin, DeleteView):

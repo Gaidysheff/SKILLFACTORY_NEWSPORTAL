@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.contrib import messages
 from django.utils.translation import ngettext
 
-from .models import Author, Category, Comments, Post, Subscribe
+from .models import Author, Category, Comments, Post, Subscribe, CategorySubscribe
 
 from modeltranslation.admin import TranslationAdmin
 
@@ -95,3 +95,12 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Subscribe)
 class SubscribeAdmin(admin.ModelAdmin):
     list_display = ('email', 'date', )
+
+
+@admin.register(CategorySubscribe)
+class CategorySubscribeAdmin(admin.ModelAdmin):
+    list_display = ('subscriber', 'категория', )
+
+    @admin.display(ordering='-postCategory')
+    def категория(self, obj):
+        return obj.categorySubscribed
