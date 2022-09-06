@@ -1,0 +1,1971 @@
+[
+    {
+        "label": "pytz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytz",
+        "description": "pytz",
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "common_timezones",
+        "importPath": "pytz",
+        "description": "pytz",
+        "isExtraImport": true,
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "re_path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "# index",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "show_category",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "show_post",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "addpage",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "archive",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "pageNotFound",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostsHome",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostCategory",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "ShowPost",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "AddPage",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpUser",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginUser",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "set_timezone",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostAPIView",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeView",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "# CategorySubscribeView",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "UnSubscribeView",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "category_subscription",
+        "importPath": "newsapp.views",
+        "description": "newsapp.views",
+        "isExtraImport": true,
+        "detail": "newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "logging.config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "RotatingFileHandler",
+        "importPath": "logging.handlers",
+        "description": "logging.handlers",
+        "isExtraImport": true,
+        "detail": "logging.handlers",
+        "documentation": {}
+    },
+    {
+        "label": "logger_config",
+        "importPath": "logging_settings",
+        "description": "logging_settings",
+        "isExtraImport": true,
+        "detail": "logging_settings",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "newsapp.models",
+        "description": "newsapp.models",
+        "isExtraImport": true,
+        "detail": "newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeForm",
+        "importPath": "newsapp.forms",
+        "description": "newsapp.forms",
+        "isExtraImport": true,
+        "detail": "newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySubscribeForm",
+        "importPath": "newsapp.forms",
+        "description": "newsapp.forms",
+        "isExtraImport": true,
+        "detail": "newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ngettext",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "pgettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationAdmin",
+        "importPath": "modeltranslation.admin",
+        "description": "modeltranslation.admin",
+        "isExtraImport": true,
+        "detail": "modeltranslation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "arg",
+        "importPath": "ast",
+        "description": "ast",
+        "isExtraImport": true,
+        "detail": "ast",
+        "documentation": {}
+    },
+    {
+        "label": "EmailInput",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CharField",
+        "importPath": "django.forms",
+        "description": "django.forms",
+        "isExtraImport": true,
+        "detail": "django.forms",
+        "documentation": {}
+    },
+    {
+        "label": "TextFile",
+        "importPath": "distutils.text_file",
+        "description": "distutils.text_file",
+        "isExtraImport": true,
+        "detail": "distutils.text_file",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "importPath": "turtle",
+        "description": "turtle",
+        "isExtraImport": true,
+        "detail": "turtle",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationError",
+        "importPath": "django.core.exceptions",
+        "description": "django.core.exceptions",
+        "isExtraImport": true,
+        "detail": "django.core.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sum",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "JSONParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "JSONRenderer",
+        "importPath": "rest_framework.renderers",
+        "description": "rest_framework.renderers",
+        "isExtraImport": true,
+        "detail": "rest_framework.renderers",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "generics",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "importPath": "modeltranslation.translator",
+        "description": "modeltranslation.translator",
+        "isExtraImport": true,
+        "detail": "modeltranslation.translator",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationOptions",
+        "importPath": "modeltranslation.translator",
+        "description": "modeltranslation.translator",
+        "isExtraImport": true,
+        "detail": "modeltranslation.translator",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "model_to_dict",
+        "importPath": "django.forms.models",
+        "description": "django.forms.models",
+        "isExtraImport": true,
+        "detail": "django.forms.models",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "requests",
+        "description": "requests",
+        "isExtraImport": true,
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "requests",
+        "description": "requests",
+        "isExtraImport": true,
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "Paginator",
+        "importPath": "django.core.paginator",
+        "description": "django.core.paginator",
+        "isExtraImport": true,
+        "detail": "django.core.paginator",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "Http404",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseNotFound",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequiredMixin",
+        "importPath": "django.contrib.auth.mixins",
+        "description": "django.contrib.auth.mixins",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "TimezoneMiddleware",
+        "kind": 6,
+        "importPath": "NewsPortal.NewsPortal.basic.middlewares",
+        "description": "NewsPortal.NewsPortal.basic.middlewares",
+        "peekOfCode": "class TimezoneMiddleware:\n    def __init__(self, get_response):\n        self.get_response = get_response\n    def __call__(self, request):\n        # пытаемся забрать часовой пояс из сессии\n        tzname = request.session.get('django_timezone')\n        #  если он есть в сессии, то выставляем такой часовой пояс. Если же его нет, значит он не установлен, и часовой пояс надо выставить по умолчанию (на время сервера)\n        if tzname:\n            timezone.activate(pytz.timezone(tzname))\n        else:",
+        "detail": "NewsPortal.NewsPortal.basic.middlewares",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.asgi",
+        "description": "NewsPortal.NewsPortal.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "NewsPortal.NewsPortal.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-kvjc1om!yja($%38*&2x!(io)to2y=1a19#6y!l+-v2zamv%8a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-kvjc1om!yja($%38*&2x!(io)to2y=1a19#6y!l+-v2zamv%8a'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'modeltranslation',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'newsapp.apps.NewsappConfig',\n    'rest_framework',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.locale.LocaleMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'NewsPortal.basic.middlewares.TimezoneMiddleware',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "ROOT_URLCONF = 'NewsPortal.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'NewsPortal.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGES",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "LANGUAGES = [\n    ('en-us', 'English'),\n    ('ru', 'Русский'),\n    ('fr', 'Français'),\n    ('ja', 'Japanese'),\n    ('de', 'Deuthsch'),\n    # ('zh-CN', 'Chinese'),\n]\nLANGUAGE_CODE = 'ru'\nTIME_ZONE = 'Europe/Moscow'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'ru'\nTIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "TIME_ZONE = 'Europe/Moscow'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'static')\nSTATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "STATICFILES_DIRS = []\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),\n)",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),\n)\nEMAIL_SUBJECT_PREFIX = '[SuperService] '\nEMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nMEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),\n)\nEMAIL_SUBJECT_PREFIX = '[SuperService] '\nEMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\n# ------------------------------------------------------------------------------------\nADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),\n)\nEMAIL_SUBJECT_PREFIX = '[SuperService] '\nEMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ADMINS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "ADMINS = (\n    ('admin', 'gaidysheff@mail.ru'),\n)\nEMAIL_SUBJECT_PREFIX = '[SuperService] '\nEMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_SUBJECT_PREFIX",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_SUBJECT_PREFIX = '[SuperService] '\nEMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.yandex.ru'\nEMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_HOST_USER = 'gaidysheff@yandex.ru'\nEMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = '*******'\nEMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_PORT = 465\nEMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_USE_TLS = False\nEMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_SSL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "EMAIL_USE_SSL = True\nSERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SERVER_EMAIL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "SERVER_EMAIL = 'gaidysheff@yandex.ru'\nDEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FROM_EMAIL",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "DEFAULT_FROM_EMAIL = 'gaidysheff@yandex.ru'\n# ------------------------------------------------------------------------------------\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOCALE_PATHS",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.settings",
+        "description": "NewsPortal.NewsPortal.settings",
+        "peekOfCode": "LOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale')\n]",
+        "detail": "NewsPortal.NewsPortal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.urls",
+        "description": "NewsPortal.NewsPortal.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', PostsHome.as_view(), name='home'),\n    path('category/<slug:postCategory_slug>/',\n         PostCategory.as_view(), name='category'),\n    path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),\n    path('addpage/', AddPage.as_view(), name='add_page'),\n    path('subscribe/', SubscribeView.as_view(), name='subscribe'),\n    path('catsubscribe/', category_subscription, name='catsubscribe'),\n    # path('sign/category_subscribe/',",
+        "detail": "NewsPortal.NewsPortal.urls",
+        "documentation": {}
+    },
+    {
+        "label": "handler404",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.urls",
+        "description": "NewsPortal.NewsPortal.urls",
+        "peekOfCode": "handler404 = pageNotFound\n# --------------------------------------------------------------------------------\n# Этот код только на время отладки работы с медиа-файлами (пока DEBUG=True)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL,\n                          document_root=settings.MEDIA_ROOT)",
+        "detail": "NewsPortal.NewsPortal.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.wsgi",
+        "description": "NewsPortal.NewsPortal.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "NewsPortal.NewsPortal.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "CustomHandler",
+        "kind": 6,
+        "importPath": "NewsPortal.logging.logging_settings",
+        "description": "NewsPortal.logging.logging_settings",
+        "peekOfCode": "class CustomHandler(logging.Handler):\n    def __init__(self, filename):\n        logging.Handler.__init__(self)\n        self.filename = filename\n    def emit(self, record):\n        message = self.format(record)\n        with open(self.filename, 'a') as file:\n            file.write(message + '\\n')\nclass NewFunctionFilter(logging.Filter):\n    def filter(self, record):",
+        "detail": "NewsPortal.logging.logging_settings",
+        "documentation": {}
+    },
+    {
+        "label": "NewFunctionFilter",
+        "kind": 6,
+        "importPath": "NewsPortal.logging.logging_settings",
+        "description": "NewsPortal.logging.logging_settings",
+        "peekOfCode": "class NewFunctionFilter(logging.Filter):\n    def filter(self, record):\n        print(record.new_name)\n        return record.funcName == 'new_function'\nlogger_config = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'formatters': {\n        'verbose_1': {\n            'format': '{asctime} - {levelname} - {message}',",
+        "detail": "NewsPortal.logging.logging_settings",
+        "documentation": {}
+    },
+    {
+        "label": "logger_config",
+        "kind": 5,
+        "importPath": "NewsPortal.logging.logging_settings",
+        "description": "NewsPortal.logging.logging_settings",
+        "peekOfCode": "logger_config = {\n    'version': 1,\n    'disable_existing_loggers': False,\n    'formatters': {\n        'verbose_1': {\n            'format': '{asctime} - {levelname} - {message}',\n            'style': '{'\n        },\n        'verbose_2': {\n            'format': '{asctime} - {levelname} - {message} - {pathname}',",
+        "detail": "NewsPortal.logging.logging_settings",
+        "documentation": {}
+    },
+    {
+        "label": "new_function",
+        "kind": 2,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "def new_function():\n    name = 'eugene'\n    logger_custom.info('test - Enter into the new_function() - This variable makes the PROBLEM', extra={\n        'new_name': name}, exc_info=True)\ndef main():\n    name = 'eugene'\n    logger_custom.error(\n        'test - Enter into the main()', extra={'new_name': name})\n# -----------------------------Исключения в процессе логгирования----------------------------------------\nwords = ['new log', 'old logger', 'simple format', 33]",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "def main():\n    name = 'eugene'\n    logger_custom.error(\n        'test - Enter into the main()', extra={'new_name': name})\n# -----------------------------Исключения в процессе логгирования----------------------------------------\nwords = ['new log', 'old logger', 'simple format', 33]\ndef function():\n    for item in words:\n        try:\n            print(item.split(' '))",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "function",
+        "kind": 2,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "def function():\n    for item in words:\n        try:\n            print(item.split(' '))\n        except:\n            logger_custom.error(\n                f'test - Exception here, problem with item = {item}', exc_info=True)\n# -----------------------------ротация файлов журнала----------------------------------------\ndef create_rotating_log(path):\n    logger = logging.getLogger(__name__)",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_rotating_log",
+        "kind": 2,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "def create_rotating_log(path):\n    logger = logging.getLogger(__name__)\n    logger.setLevel(logging.INFO)\n    handler = RotatingFileHandler(path, maxBytes=5, backupCount=3)\n    logger.addHandler(handler)\n    for i in range(100):\n        logger.info(\"Это тестовая строка-запись в журнале %s\" % i)\n# -----------------------------------------------------------------------------------------------\nif __name__ == '__main__':\n    new_function()",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "logger = logging.getLogger('django')\nprint('Level of logger (\"django\") =', logger.level)\nlogger_custom = logging.getLogger('custom_logger')\nprint('Level of logger (\"django\") =', logger_custom.level)\n# logger_request = logging.getLogger('django.request')\n# print('Level of logger_request =', logger_request.level)\n# logger_server = logging.getLogger('django.server')\n# print('Level of logger_server =', logger_server.level)\n# logger_template = logging.getLogger('django.template')\n# print('Level of logger_template =', logger_template.level)",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger_custom",
+        "kind": 5,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "logger_custom = logging.getLogger('custom_logger')\nprint('Level of logger (\"django\") =', logger_custom.level)\n# logger_request = logging.getLogger('django.request')\n# print('Level of logger_request =', logger_request.level)\n# logger_server = logging.getLogger('django.server')\n# print('Level of logger_server =', logger_server.level)\n# logger_template = logging.getLogger('django.template')\n# print('Level of logger_template =', logger_template.level)\n# logger_db_backends = logging.getLogger('django.db_backends')\n# print('Level of logger_db_backends =', logger_db_backends.level)",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "NewsPortal.logging.main",
+        "description": "NewsPortal.logging.main",
+        "peekOfCode": "words = ['new log', 'old logger', 'simple format', 33]\ndef function():\n    for item in words:\n        try:\n            print(item.split(' '))\n        except:\n            logger_custom.error(\n                f'test - Exception here, problem with item = {item}', exc_info=True)\n# -----------------------------ротация файлов журнала----------------------------------------\ndef create_rotating_log(path):",
+        "detail": "NewsPortal.logging.main",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0001_initial",
+        "description": "NewsPortal.newsapp.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Author',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "NewsPortal.newsapp.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0002_alter_post_options_alter_post_author_and_more",
+        "description": "NewsPortal.newsapp.migrations.0002_alter_post_options_alter_post_author_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='post',\n            options={'ordering': ['-dateCreation', 'title'], 'verbose_name': 'Пост', 'verbose_name_plural': 'Посты'},\n        ),\n        migrations.AlterField(",
+        "detail": "NewsPortal.newsapp.migrations.0002_alter_post_options_alter_post_author_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0003_category_name_en_us_category_name_fr_and_more",
+        "description": "NewsPortal.newsapp.migrations.0003_category_name_en_us_category_name_fr_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0002_alter_post_options_alter_post_author_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='category',\n            name='name_en_us',\n            field=models.CharField(max_length=64, null=True, unique=True),\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0003_category_name_en_us_category_name_fr_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0004_category_name_zh_cn_post_text_zh_cn_post_title_zh_cn",
+        "description": "NewsPortal.newsapp.migrations.0004_category_name_zh_cn_post_text_zh_cn_post_title_zh_cn",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0003_category_name_en_us_category_name_fr_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='category',\n            name='name_zh_CN',\n            field=models.CharField(max_length=64, null=True, unique=True),\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0004_category_name_zh_cn_post_text_zh_cn_post_title_zh_cn",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0005_rename_name_zh_cn_category_name_de_and_more",
+        "description": "NewsPortal.newsapp.migrations.0005_rename_name_zh_cn_category_name_de_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0004_category_name_zh_cn_post_text_zh_cn_post_title_zh_cn'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='category',\n            old_name='name_zh_CN',\n            new_name='name_de',\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0005_rename_name_zh_cn_category_name_de_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0006_subscribe",
+        "description": "NewsPortal.newsapp.migrations.0006_subscribe",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0005_rename_name_zh_cn_category_name_de_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Subscribe',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('email', models.EmailField(max_length=254)),",
+        "detail": "NewsPortal.newsapp.migrations.0006_subscribe",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0007_categorysubscribe_category_subscriber_and_more",
+        "description": "NewsPortal.newsapp.migrations.0007_categorysubscribe_category_subscriber_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('newsapp', '0006_subscribe'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CategorySubscribe',\n            fields=[",
+        "detail": "NewsPortal.newsapp.migrations.0007_categorysubscribe_category_subscriber_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0008_rename_subscriber_through_categorysubscribe_subscriber",
+        "description": "NewsPortal.newsapp.migrations.0008_rename_subscriber_through_categorysubscribe_subscriber",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0007_categorysubscribe_category_subscriber_and_more'),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name='categorysubscribe',\n            old_name='subscriber_through',\n            new_name='subscriber',\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0008_rename_subscriber_through_categorysubscribe_subscriber",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0009_remove_category_subscriber_and_more",
+        "description": "NewsPortal.newsapp.migrations.0009_remove_category_subscriber_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('newsapp', '0008_rename_subscriber_through_categorysubscribe_subscriber'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='category',\n            name='subscriber',\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0009_remove_category_subscriber_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.migrations.0010_alter_categorysubscribe_subscriber",
+        "description": "NewsPortal.newsapp.migrations.0010_alter_categorysubscribe_subscriber",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('newsapp', '0009_remove_category_subscriber_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='categorysubscribe',\n            name='subscriber',\n            field=models.EmailField(max_length=254),\n        ),",
+        "detail": "NewsPortal.newsapp.migrations.0010_alter_categorysubscribe_subscriber",
+        "documentation": {}
+    },
+    {
+        "label": "get_categories",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "description": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "peekOfCode": "def get_categories(filter=None):\n    if not filter:\n        return Category.objects.all()\n    else:\n        return Category.objects.filter(pk=filter)\n@register.inclusion_tag('newsapp/list_categories.html')\ndef show_categories(sort=None, cat_selected=0):\n    if not sort:\n        cats = Category.objects.all()\n    else:",
+        "detail": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "documentation": {}
+    },
+    {
+        "label": "show_categories",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "description": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "peekOfCode": "def show_categories(sort=None, cat_selected=0):\n    if not sort:\n        cats = Category.objects.all()\n    else:\n        cats = Category.objects.order_by(sort)\n    return {'cats': cats, 'cat_selected': cat_selected}\n@register.inclusion_tag('newsapp/subscribe_form.html')\ndef subscribe_form():\n    return{\"subscribe_form\": SubscribeForm()}\n@register.inclusion_tag('newsapp/category_subscription.html')",
+        "detail": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "documentation": {}
+    },
+    {
+        "label": "subscribe_form",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "description": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "peekOfCode": "def subscribe_form():\n    return{\"subscribe_form\": SubscribeForm()}\n@register.inclusion_tag('newsapp/category_subscription.html')\ndef category_subscribe_form():\n    return{\"category_subscribe_form\": CategorySubscribeForm()}",
+        "detail": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "documentation": {}
+    },
+    {
+        "label": "category_subscribe_form",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "description": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "peekOfCode": "def category_subscribe_form():\n    return{\"category_subscribe_form\": CategorySubscribeForm()}",
+        "detail": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 5,
+        "importPath": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "description": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "peekOfCode": "register = template.Library()\n@register.simple_tag(name='getcats')\ndef get_categories(filter=None):\n    if not filter:\n        return Category.objects.all()\n    else:\n        return Category.objects.filter(pk=filter)\n@register.inclusion_tag('newsapp/list_categories.html')\ndef show_categories(sort=None, cat_selected=0):\n    if not sort:",
+        "detail": "NewsPortal.newsapp.templatetags.newsapp_tags",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class CommentsAdmin(admin.ModelAdmin):\n    pass\nclass CommentsInline(admin.TabularInline):\n    model = Comments\n    extra = 0\n@admin.register(Post)\nclass PostAdmin(admin.ModelAdmin):\n    list_display = ('id', 'title', 'slug', 'dateCreation', 'photo', 'categoryType', 'rating', 'status',\n                    # 'display_category'\n                    'категория', 'автор'",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsInline",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class CommentsInline(admin.TabularInline):\n    model = Comments\n    extra = 0\n@admin.register(Post)\nclass PostAdmin(admin.ModelAdmin):\n    list_display = ('id', 'title', 'slug', 'dateCreation', 'photo', 'categoryType', 'rating', 'status',\n                    # 'display_category'\n                    'категория', 'автор'\n                    )\n    list_display_links = ('id', 'title')",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PostAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class PostAdmin(admin.ModelAdmin):\n    list_display = ('id', 'title', 'slug', 'dateCreation', 'photo', 'categoryType', 'rating', 'status',\n                    # 'display_category'\n                    'категория', 'автор'\n                    )\n    list_display_links = ('id', 'title')\n    search_fields = ('title', 'text')\n    list_editable = ('categoryType', 'rating', 'status')\n    list_filter = ('dateCreation', 'rating', 'postCategory')\n    prepopulated_fields = {'slug': ('title',)}",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "PostAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class PostAdmin(TranslationAdmin):\n    model = Post\n@admin.register(Author)\nclass AuthorAdmin(admin.ModelAdmin):\n    pass\n@admin.register(Category)\nclass CategoryAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'slug', )\n    list_display_links = ('id', 'name')\n    search_fields = ('name', )",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AuthorAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class AuthorAdmin(admin.ModelAdmin):\n    pass\n@admin.register(Category)\nclass CategoryAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'slug', )\n    list_display_links = ('id', 'name')\n    search_fields = ('name', )\n    prepopulated_fields = {'slug': ('name',)}\n    class CategoryAdmin(TranslationAdmin):\n        model = Category",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class CategoryAdmin(admin.ModelAdmin):\n    list_display = ('id', 'name', 'slug', )\n    list_display_links = ('id', 'name')\n    search_fields = ('name', )\n    prepopulated_fields = {'slug': ('name',)}\n    class CategoryAdmin(TranslationAdmin):\n        model = Category\n# ___________________________________________________________________________\n@admin.register(Subscribe)\nclass SubscribeAdmin(admin.ModelAdmin):",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class SubscribeAdmin(admin.ModelAdmin):\n    list_display = ('email', 'date', )\n@admin.register(CategorySubscribe)\nclass CategorySubscribeAdmin(admin.ModelAdmin):\n    list_display = ('subscriber', 'категория', )\n    @admin.display(ordering='-postCategory')\n    def категория(self, obj):\n        return obj.categorySubscribed",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySubscribeAdmin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.admin",
+        "description": "NewsPortal.newsapp.admin",
+        "peekOfCode": "class CategorySubscribeAdmin(admin.ModelAdmin):\n    list_display = ('subscriber', 'категория', )\n    @admin.display(ordering='-postCategory')\n    def категория(self, obj):\n        return obj.categorySubscribed",
+        "detail": "NewsPortal.newsapp.admin",
+        "documentation": {}
+    },
+    {
+        "label": "NewsappConfig",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.apps",
+        "description": "NewsPortal.newsapp.apps",
+        "peekOfCode": "class NewsappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'newsapp'\n    verbose_name = 'newsapp - Новостной портал'",
+        "detail": "NewsPortal.newsapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AddPostForm",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.forms",
+        "description": "NewsPortal.newsapp.forms",
+        "peekOfCode": "class AddPostForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields['author'].empty_label = 'Автор не выбран'\n        self.fields['postCategory'].empty_label = 'Категория не выбрана'\n        self.fields['postCategory'].widget.attrs.update(\n            {'class': 'btn btn-secondary dropdown-toggle'}, size='7')\n        self.fields['author'].widget.attrs.update(\n            {'class': 'btn btn-secondary dropdown-toggle', 'type': 'button', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false'})\n        self.fields['categoryType'].widget.attrs.update(",
+        "detail": "NewsPortal.newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpUserForm",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.forms",
+        "description": "NewsPortal.newsapp.forms",
+        "peekOfCode": "class SignUpUserForm(UserCreationForm):\n    username = forms.CharField(\n        label='Логин', widget=forms.TextInput(attrs={'class': 'form-control'})),\n    email = forms.EmailField(\n        label='e-mail', widget=forms.EmailInput(attrs={'class': 'form-control'})),\n    password1 = forms.CharField(\n        label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-control'})),\n    password2 = forms.CharField(label='Повтор пароля', widget=forms.PasswordInput(\n        attrs={'class': 'form-control'})),\n    class Meta:",
+        "detail": "NewsPortal.newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "LoginFormUser",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.forms",
+        "description": "NewsPortal.newsapp.forms",
+        "peekOfCode": "class LoginFormUser(AuthenticationForm):\n    username = forms.CharField(label='Логин', widget=forms.TextInput(\n        attrs={'class': 'form-control'})),\n    password = forms.CharField(label='Пароль:', widget=forms.PasswordInput(\n        attrs={'class': 'form-control'})),\nclass SubscribeForm(forms.ModelForm):\n    email = forms.EmailField(\n        label='E-mail',\n        widget=forms.EmailInput(attrs={\n            'class': 'form-input',",
+        "detail": "NewsPortal.newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeForm",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.forms",
+        "description": "NewsPortal.newsapp.forms",
+        "peekOfCode": "class SubscribeForm(forms.ModelForm):\n    email = forms.EmailField(\n        label='E-mail',\n        widget=forms.EmailInput(attrs={\n            'class': 'form-input',\n            'size': 30,\n            'placeholder': \"Your email ...\",\n        }))\n    class Meta:\n        model = Subscribe",
+        "detail": "NewsPortal.newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySubscribeForm",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.forms",
+        "description": "NewsPortal.newsapp.forms",
+        "peekOfCode": "class CategorySubscribeForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.fields['categorySubscribed'].empty_label = 'Категория не выбрана'\n    class Meta:\n        model = CategorySubscribe\n        fields = ('subscriber', 'categorySubscribed')\n        # widgets = {'subscriber': EmailInput(attrs={'class': 'form-input', 'size': 30, 'placeholder': 'Your email ...'}),\n        #            'categorySubscribed': CharField(attrs={'class': 'form-input', 'size': 30, 'placeholder': 'Your email ...'}),\n        #            }",
+        "detail": "NewsPortal.newsapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Author",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class Author(models.Model):\n    authorUser = models.OneToOneField(User, on_delete=models.CASCADE)\n    ratingAuthor = models.SmallIntegerField(default=0)\n    class Meta:\n        verbose_name = 'Автор'\n        verbose_name_plural = 'Авторы'\n    def update_rating(self):\n        postRat = self.post_set.all().aggregate(postRating=Sum('rating'))\n        pRat = 0\n        pRat += postRat.get('postRating')",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Post",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class Post(models.Model):\n    author = models.ForeignKey(\n        Author, on_delete=models.CASCADE, verbose_name='Автор')\n    NEWS = 'NW'\n    ARTICLE = 'AR'\n    CATEGORY_CHOICES = (\n        (NEWS, 'Новость'),\n        (ARTICLE, 'Статья'),\n    )\n    STATUS_CHOICES = [",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class Category(models.Model):\n    name = models.CharField(max_length=64, unique=True)\n    slug = models.SlugField(max_length=255, unique=True,\n                            db_index=True, verbose_name='URL')\n    # subscriber = models.ManyToManyField(\n    #     User, through='CategorySubscribe', blank=True, related_name='category')\n    class Meta:\n        verbose_name = 'Категория'\n        verbose_name_plural = 'Категории'\n    def __str__(self):",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class Comments(models.Model):\n    commentPost = models.ForeignKey(\n        Post, on_delete=models.CASCADE, verbose_name='Заголовок поста')\n    commentUser = models.ForeignKey(\n        User, on_delete=models.CASCADE, verbose_name='Пользователь')\n    text = models.TextField(verbose_name='Текст поста',\n                            help_text='Введите здесь текст своего комментария')\n    dateCreation = models.DateTimeField(auto_now_add=True)\n    rating = models.SmallIntegerField(default=0, verbose_name='Рейтинг:')\n    class Meta:",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "Subscribe",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class Subscribe(models.Model):\n    email = models.EmailField()\n    date = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.email\n# # --------Подписка по e-mail на индивидуальную категорию----------\n# class CategorySubscriber(models.Model):\n#     subscriber_thru = models.ForeignKey(\n#         User, on_delete=models.CASCADE, blank=True, null=True,)\n#     category_thru = models.ForeignKey(",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategorySubscribe",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.models",
+        "description": "NewsPortal.newsapp.models",
+        "peekOfCode": "class CategorySubscribe(models.Model):\n    subscriber = models.EmailField()\n    # subscriber = models.OneToOneField(User, on_delete=models.CASCADE)\n    categorySubscribed = models.ManyToManyField(Category)\n    def __str__(self):\n        return self.subscriber",
+        "detail": "NewsPortal.newsapp.models",
+        "documentation": {}
+    },
+    {
+        "label": "PostSerializer",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.serializers",
+        "description": "NewsPortal.newsapp.serializers",
+        "peekOfCode": "class PostSerializer(serializers.Serializer):\n    categoryType = serializers.CharField(read_only=True)\n    dateCreation = serializers.DateTimeField(read_only=True)\n    postCategory_id = serializers.IntegerField(read_only=True)\n    # катерогии уже определено числовое значение id в моделе\n    title = serializers.CharField(max_length=255)\n    slug = serializers.SlugField(read_only=True)\n    text = serializers.CharField()\n    photo = serializers.ImageField(read_only=True)\n    rating = serializers.IntegerField(default=0)",
+        "detail": "NewsPortal.newsapp.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CategoryTranslationOptions",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.translation",
+        "description": "NewsPortal.newsapp.translation",
+        "peekOfCode": "class CategoryTranslationOptions(TranslationOptions):\n    # указываем, какие именно поля надо переводить в виде кортежа\n    fields = ('name', )\n@register(Post)\nclass PostTranslationOptions(TranslationOptions):\n    fields = ('title', 'text', )",
+        "detail": "NewsPortal.newsapp.translation",
+        "documentation": {}
+    },
+    {
+        "label": "PostTranslationOptions",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.translation",
+        "description": "NewsPortal.newsapp.translation",
+        "peekOfCode": "class PostTranslationOptions(TranslationOptions):\n    fields = ('title', 'text', )",
+        "detail": "NewsPortal.newsapp.translation",
+        "documentation": {}
+    },
+    {
+        "label": "DataMixin",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.utils",
+        "description": "NewsPortal.newsapp.utils",
+        "peekOfCode": "class DataMixin:\n    paginate_by = 3\n    def get_user_context(self, **kwargs):\n        context = kwargs\n        # cats = Category.objects.order_by('name') # отображение всех категорий\n        cats = Category.objects.annotate(Count('post')).order_by(\n            'name')  # для исчезновения пустых категорий\n        user_menu = menu.copy()\n        if not self.request.user.is_authenticated:\n            user_menu.pop(1)",
+        "detail": "NewsPortal.newsapp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 5,
+        "importPath": "NewsPortal.newsapp.utils",
+        "description": "NewsPortal.newsapp.utils",
+        "peekOfCode": "menu = [{'title': \"О сайте\", 'url_name': 'about'},\n        {'title': \"Добавить статью\", 'url_name': 'add_page'},\n        {'title': \"Обратная связь\", 'url_name': 'contact'},\n        # {'title': \"Войти\", 'url_name': 'login'},\n        ]\n#    _____ вариант исчезновения \"Добавить статью\" из меню для неавторизованного пользователя ___\nclass DataMixin:\n    paginate_by = 3\n    def get_user_context(self, **kwargs):\n        context = kwargs",
+        "detail": "NewsPortal.newsapp.utils",
+        "documentation": {}
+    },
+    {
+        "label": "PostsHome",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class PostsHome(DataMixin, ListView):\n    model = Post\n    template_name = 'newsapp/index.html'\n    context_object_name = 'posts'\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title=\"Главная страница\")\n        return dict(list(context.items()) + list(c_def.items()))\n    def get_queryset(self):\n        return Post.objects.filter(status='p')",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostCategory",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class PostCategory(DataMixin, ListView):\n    model = Post\n    template_name = 'newsapp/cat_index.html'\n    context_object_name = 'posts'\n    allow_empty = False\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(\n            title='Категория - ' + str(context['posts'][0].postCategory), cat_selected=context['posts'][0].postCategory_id)\n        return dict(list(context.items()) + list(c_def.items()))",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "ShowPost",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class ShowPost(DataMixin, DetailView):\n    model = Post\n    template_name = 'newsapp/post.html'\n    slug_url_kwarg = 'post_slug'\n    context_object_name = 'post'\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title=context['post'])\n        return dict(list(context.items()) + list(c_def.items()))\nclass AddPage(LoginRequiredMixin, DataMixin, CreateView):",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "AddPage",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class AddPage(LoginRequiredMixin, DataMixin, CreateView):\n    form_class = AddPostForm\n    template_name = 'newsapp/addpage.html'\n    success_url = reverse_lazy('home')\n    login_url = reverse_lazy('home')\n    raise_exception = True\n    # вывести '403 Forbidden' для неавторизованного пользователя (закоментить строку - тогда перенаправление на 'home')\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title=\"Добавление статьи\")",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpUser",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class SignUpUser(DataMixin, CreateView):\n    form_class = SignUpUserForm\n    template_name = 'newsapp/signup.html'\n    success_url = reverse_lazy('login')\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title=\"Регистрация\")\n        return dict(list(context.items()) + list(c_def.items()))\n    def form_valid(self, form):\n        user = form.save()",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginUser",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class LoginUser(DataMixin, LoginView):\n    form_class = LoginFormUser\n    template_name = 'newsapp/login.html'\n    def get_context_data(self, *, object_list=None, **kwargs):\n        context = super().get_context_data(**kwargs)\n        c_def = self.get_user_context(title=\"Авторизация\")\n        return dict(list(context.items()) + list(c_def.items()))\n    def get_success_url(self):\n        return reverse_lazy('home')\ndef logout_user(request):",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "SubscribeView",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class SubscribeView(LoginRequiredMixin, CreateView):\n    model = Subscribe\n    form_class = SubscribeForm\n    success_url = reverse_lazy('home')\n    login_url = reverse_lazy('login')\n    # raise_exception = True\ndef category_subscription(request):\n    if request.method == 'POST':\n        form = CategorySubscribeForm(request.POST)\n        if form.is_valid():",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "UnSubscribeView",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class UnSubscribeView(LoginRequiredMixin, DeleteView):\n    model = CategorySubscribe\n    template_name = 'unsubscribe.html'\n    success_url = reverse_lazy('home')\n# --------------Dgango REST Framework--------------------\nclass PostAPIView(APIView):\n    def get(self, request):\n        post_list = Post.objects.all()\n        return Response({'posts': PostSerializer(post_list).data})\n    def post(self, request):",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "PostAPIView",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class PostAPIView(APIView):\n    def get(self, request):\n        post_list = Post.objects.all()\n        return Response({'posts': PostSerializer(post_list).data})\n    def post(self, request):\n        serializer = PostSerializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        serializer.save()\n        return Response({'post': serializer.data})\n    def put(self, request, *args, **kwargs):",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "kind": 6,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "class Index(View):\n    def get(self, request):\n        string = _('Hello world')\n        context = {\n            'string': string\n        }\n        return HttpResponse(render(request, 'newsapp/translation.html', context))",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_user",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def logout_user(request):\n    logout(request)\n    return redirect('login')\ndef set_timezone(request):\n    context = {\n        'current_time': timezone.localtime(timezone.now()),\n        'timezones': pytz.common_timezones,\n    }\n    if request.method == 'POST':\n        request.session['django_timezone'] = request.POST['timezone']",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "set_timezone",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def set_timezone(request):\n    context = {\n        'current_time': timezone.localtime(timezone.now()),\n        'timezones': pytz.common_timezones,\n    }\n    if request.method == 'POST':\n        request.session['django_timezone'] = request.POST['timezone']\n        return redirect('/posts/')\n    else:\n        return render(request, 'base.html', context)",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "category_subscription",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def category_subscription(request):\n    if request.method == 'POST':\n        form = CategorySubscribeForm(request.POST)\n        if form.is_valid():\n            form.save()\n            # return HttpResponse(f'<h2> Вы подписались на данную категорию</h2>')\n            return redirect('home')\n        else:\n            return HttpResponse('Invalid data')\n    else:",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def about(request):\n    contact_list = Post.objects.all()\n    paginator = Paginator(contact_list, 3)\n    page_number = request.GET.get('page')\n    page_obj = paginator.get_page(page_number)\n    return render(request, 'newsapp/about.html', {'page_obj': page_obj, 'menu': menu, 'title': 'О сайте'})\n    # Просто пробник пагинации через функцию\n   # ----------------------------------------------------------------\ndef contact(request):\n    return HttpResponse(render(request, 'newsapp/contacts.html'))",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def contact(request):\n    return HttpResponse(render(request, 'newsapp/contacts.html'))\n    # return HttpResponse(\"Обратная связь\")\n# def login(request):\n#     return HttpResponse(\"Авторизация\")\n    # ----------------------------------------------------------------\ndef archive(request, year):\n    if(int(year) > 2022):\n        raise redirect('/', permanent=True)\n    return HttpResponse(f\"<h1>Архив по годам</h1>{year}</p>\")",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "archive",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def archive(request, year):\n    if(int(year) > 2022):\n        raise redirect('/', permanent=True)\n    return HttpResponse(f\"<h1>Архив по годам</h1>{year}</p>\")\ndef pageNotFound(request, exception):\n    return HttpResponseNotFound('<h1>Страница не найдена</h1>')\n    # ----------------------------------------------------------------\n# class Index(View):\n#     def get(self, request):\n#         string = _('Hello world')",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "pageNotFound",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.views",
+        "description": "NewsPortal.newsapp.views",
+        "peekOfCode": "def pageNotFound(request, exception):\n    return HttpResponseNotFound('<h1>Страница не найдена</h1>')\n    # ----------------------------------------------------------------\n# class Index(View):\n#     def get(self, request):\n#         string = _('Hello world')\n#         return HttpResponse(string)\nclass Index(View):\n    def get(self, request):\n        string = _('Hello world')",
+        "detail": "NewsPortal.newsapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "NewsPortal.manage",
+        "description": "NewsPortal.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'NewsPortal.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "NewsPortal.manage",
+        "documentation": {}
+    }
+]
