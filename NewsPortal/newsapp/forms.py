@@ -106,12 +106,3 @@ class CategorySubscribeForm(forms.ModelForm):
 
 
 """  https://metanit.com/python/django/4.1.php  """
-
-
-class NewSubForm(forms.ModelForm):
-    subscriber = forms.EmailField(label='E-mail')
-    categorySubscribed = forms.CharField(label='Категория')
-
-    class Meta:
-        model = CategorySubscribe
-        fields = ['subscriber', 'categorySubscribed']

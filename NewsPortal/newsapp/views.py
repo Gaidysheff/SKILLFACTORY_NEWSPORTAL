@@ -378,10 +378,3 @@ class Index(View):
 >>> form['headline'].value()
 'Initial headline'  
 """
-
-
-class NewSubView(LoginRequiredMixin, CreateView):
-    model = CategorySubscribe
-    form_class = NewSubForm
-    success_url = reverse_lazy('home')
-    login_url = reverse_lazy('login')

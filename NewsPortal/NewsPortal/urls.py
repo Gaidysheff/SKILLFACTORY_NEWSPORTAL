@@ -27,7 +27,6 @@ from newsapp.views import (
     set_timezone, PostAPIView, SubscribeView,
     # CategorySubscribeView,
     UnSubscribeView, category_subscription,
-    NewSubView,
 )
 
 
@@ -39,9 +38,6 @@ urlpatterns = [
     path('post/<slug:post_slug>/', ShowPost.as_view(), name='post'),
     path('addpage/', AddPage.as_view(), name='add_page'),
     path('subscribe/', SubscribeView.as_view(), name='subscribe'),
-
-    path('newsub/', NewSubView.as_view(), name='newsube'),
-
     path('catsubscribe/', category_subscription, name='catsubscribe'),
     # path('sign/category_subscribe/',
     #      CategorySubscribeView.as_view(), name='catsubscribe'),
