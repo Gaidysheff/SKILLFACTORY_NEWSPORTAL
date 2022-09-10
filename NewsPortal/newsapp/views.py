@@ -368,3 +368,20 @@ class Index(View):
             'string': string
         }
         return HttpResponse(render(request, 'newsapp/translation.html', context))
+
+
+""" 
+>>> article = Article.objects.get(pk=1)
+>>> article.headline
+'My headline'
+>>> form = ArticleForm(initial={'headline': 'Initial headline'}, instance=article)
+>>> form['headline'].value()
+'Initial headline'  
+"""
+
+
+class NewSubView(LoginRequiredMixin, CreateView):
+    model = CategorySubscribe
+    form_class = NewSubForm
+    success_url = reverse_lazy('home')
+    login_url = reverse_lazy('login')

@@ -1,0 +1,21 @@
+<div
+  class="container text-center"
+  style="margin-top: 50px; margin-bottom: 50px"
+>
+  <h3 class="footer-title text-uppercase editContent mb-lg-4 mb-3">
+    Подписаться на эту категорию
+  </h3>
+
+  <p>
+    By subscribing to our mailing list you will always get the latest news and
+    updates from us.
+  </p>
+
+  <form action="{% url 'subscribe' %}" method="post">
+    {% csrf_token %} {{ newsub }}
+
+    <button type="submit" class="btn-sm btn-outline-success">
+      Подписаться
+    </button>
+  </form>
+</div>
