@@ -1,19 +1,19 @@
-{% load static %}
-{% load newsapp_tags %}
-{% load i18n %}
-{% load tz %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/">
+
+{% load static %}
+{% load newsapp_tags %}
+{% load i18n %}
+{% load tz %}
+
     <title>{{title}}</title>
-
+  
             <!-- В зависимости от времени меняем оформление сайта -->
-
-
   
     <!-- <link
       rel="stylesheet"
@@ -21,53 +21,53 @@
     /> -->
 
     <!-- Core theme CSS (includes Bootstrap)-->
+
     <link href="{% static 'newsapp/css/styles.css' %}" rel="stylesheet" />
     <link
       rel="shortcut #A0BEC4"
       href="{% static 'newsapp/images/favicon.ico' %}"
       type="image.png"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- <style>  body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkcyan {% else %} powderblue {% endif %};}</style> -->
+    <link rel="stylesheet" href="{% static 'newsapp/css/my_style.css' %}">
   </head>
-
-
 
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container" style="margin-left: 5px">
+      <div class="container header" style="margin-left: 5px">
         <!-- Заменить потом ссылку на favicon на страничку создателя сайта -->
         <a class="navbar-brand" href="{% url 'home' %}"
           ><img src="/static/newsapp/images/favicon-32x32.png" alt="My logo" />
           Eugene Gaidysheff's NewsPortal</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          {% block mainmenu %}
+        <div">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            {% block mainmenu %}
             <ul id="mainmenu" class="navbar-nav ml-auto">
-
               {% for m in menu %}
               <li class="nav-item active"><a class="nav-link" href="{% url m.url_name %}">{{m.title}}</a></li>
               {% endfor %}
               {% if request.user.is_authenticated %}
               <li class="nav-item active"><a class="nav-link" href="{% url 'logout' %}">{{ user.username }} | Выйти</a></li>
               {% else %}
-                <li class="nav-item active"><a class="nav-link" href="{% url 'signup' %}">Регистрация</a></li>
-                <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}">Войти</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'signup' %}">Регистрация</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}">Войти</a></li>
               {% endif %}
             </ul>
           </div>
+        </div>
           {% endblock mainmenu %}
 
           <!-- <ul class="navbar-nav ml-auto">
@@ -105,48 +105,87 @@
 
     <!-- Sidebar слева -->
 
-    <div class="container text-left" style="margin-left: 5px">
-      <div class="row">
-      <div class="col-lg-2 col-md-4">
-        {% if cat_selected == 0 %}
-            <p class="text-uppercase" style="margin-top: 15px; width: 150px; text-align: center"> Все категории</p>
-        {% else %}
-            <a href="{% url 'home' %}" class="btn btn-outline-danger" style="width: 150px; margin-top: 15px"
-            >Все категории</a>
-        {% endif %} 
+<!-- ========================= Left Bar ============================================ -->
 
-  <!-- ------------------------  перебор для работы с тегом ------------------------ -->
-  <!-- {% show_categories '-name' cat_selected %}  -->
+<div class="sidenav">
 
-  <!-- ------------------------ перебор для работы с DataMixin ------------------------ -->
+      <!-- Translation --> 
+      <form class="translation" action="{% url 'set_language' %}" method="POST"> {% csrf_token %}
+        <input type="hidden" name="next" value="{{ redirect_to }}">
+        
+        <select class="form-select" name="language" id="">
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+      
+            {% for language in languages %}
+                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                    {{ language.name_local }} - {{ language.code }}
+                </option>
+            {% endfor %}
+        </select>
+        <input type="submit" class="btn-sm btn-outline-danger addition" value="set">
+      </form>
+      <!-- Time --> 
+      
+      {% get_current_timezone as TIME_ZONE %} 
+      <form class="time" action="" method="POST"> 
+        {% csrf_token %} 
+        <label class="time_label" for="timezone">Time zone:</label> 
+        <select class="form-select" name="timezone"> 
+          {% for tz in timezones %} 
+          <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option> 
+          {% endfor %} 
+        </select> 
+        <input type="submit" class="btn-sm btn-outline-danger addition" value="set">
+      </form> 
+      <div class=" for_time">
+        {{ TIME_ZONE }} <br/>
+        {{ current_time|timezone:TIME_ZONE }}
+      </div>
+       <!-- Отображаем время в выбранном часовом поясе --> 
+
+  <!-- ------------------------  Меню Категорий  ------------------------ -->
+
+<div class="cat_menu">
+      {% if cat_selected == 0 %}
+    <p class="text-uppercase btn_all-selected"> Все категории</p>
+      {% else %}
+    <a href="{% url 'home' %}" class="btn btn-outline-danger leftbar_button"
+    >Все категории</a>
+      {% endif %} 
   
-{% for c in cats %}
-{% if c.post__count > 0 %}
-<!-- для исчезновения пустых категорий <_ _count> (см. DatMixin in utils.py) -->
- 
-<p class="fw-light" style="margin-top: 15px">{% if c.pk == cat_selected %}</p>
-<p class="font-weight-bold" style="width: 150px; text-align: center">{{c.name}}</p>
-{% else %}
-<a href="{{ c.get_absolute_url }}" class="btn btn-outline-dark" style="width: 150px">{{c.name}}</a>
-
-
-{% endif %}
-{% endif %}
-{% endfor %}
-
-   <!-- ------------------------ конец перебора ------------------------ -->
-
-</div>
-</div>
+    <!-- ------------------------  перебор для работы с тегом ------------------------ -->
+    <!-- {% show_categories '-name' cat_selected %}  -->
+  
+    <!-- ------------------------ перебор для работы с DataMixin ------------------------ -->
+      {% for c in cats %}
+      {% if c.post__count > 0 %}
+    <!-- для исчезновения пустых категорий <_ _count> (см. DatMixin in utils.py) -->
+    <p class="fw-light btn-selected">{% if c.pk == cat_selected %}</p>
+    <p class="font-weight-bold btn-selected" style="width: 150px; text-align: center">{{c.name}}</p>
+      {% else %}
+    <a href="{{ c.get_absolute_url }}" class="btn btn-outline-dark leftbar_button">{{c.name}}</a>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
 </div>
 
 
-{% block content %}
-{% endblock content %}
 
+
+</div>
+
+<!-- ============================ Main Section============================================ -->
+
+<div class="main">
+  {% block content %}
+  {% endblock content %}
+
+
+<!-- =========================== Pagination ========================================== -->
 
 {% if page_obj.has_other_pages %}
-<nav aria-label="...">
+<nav class="container_for_pagination" aria-label="...">
   <ul class="pagination justify-content-center mb-0 flex-wrap">
     <!-- -------------------------------------кнопка назад---------------------------------- -->
     {% if page_obj.has_previous %}
@@ -213,7 +252,7 @@
 {% endcomment %}
 
 
-
+</div>
 </body>
 </html>
 

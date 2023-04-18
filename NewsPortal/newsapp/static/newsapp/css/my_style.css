@@ -1,0 +1,137 @@
+.container_for_pagination {
+  margin-top: 200px;
+}
+.post_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rounded-img {
+  border-radius: 5%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img_box {
+  width: 100%;
+  height: 300px;
+}
+
+.card-title {
+  height: 120px;
+  text-align: center;
+}
+.card-text {
+  height: 350px;
+  text-align: justify;
+}
+.btn_read {
+  justify-self: center;
+}
+
+.btn_all-selected {
+  margin-top: 15px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.btn-selected {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.leftbar_button {
+  width: 150px;
+}
+
+.translation {
+  width: 180px;
+  text-align: center;
+}
+
+.time {
+  margin-top: 20px;
+  width: 180px;
+  text-align: center;
+}
+.for_time {
+  padding: 0px 5px;
+  margin: 0px 5px;
+  text-align: center;
+}
+.cat_menu {
+  margin-top: 20px;
+}
+.addition {
+  margin: 10px 0px;
+}
+
+.time_label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 77;
+}
+.content_container {
+  padding-top: 80px;
+}
+.left_container {
+  position: fixed;
+}
+/* ================================================ */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f3f2ea;
+  overflow-x: hidden;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav a {
+  margin: 0px auto;
+  /* padding: 6px 8px 6px 16px; */
+  text-decoration: none;
+  /* color: #818181; */
+  display: block;
+}
+
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+.main {
+  margin-top: 60px;
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 12px;
+  }
+}
+
+/* ================================================ */

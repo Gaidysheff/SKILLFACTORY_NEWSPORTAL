@@ -1,65 +1,21 @@
-{% extends 'newsapp/base.html' %} {% block content %}
-{% load i18n %}
-{% load tz %}
-{% load newsapp_tags %} 
+{% extends 'newsapp/base.html' %} {% block content %} {% load i18n %}
 
-<div class="container text-right" style="margin-left: 5px; width: 450px">
-  <!-- Translation --> 
-<form action="{% url 'set_language' %}" method="POST"> {% csrf_token %}
-  <input type="hidden" name="next" value="{{ redirect_to }}">
-  
-  <select class="form-select-sm" name="language" id="">
-      {% get_available_languages as LANGUAGES %}
-      {% get_language_info_list for LANGUAGES as languages %}
-
-      {% for language in languages %}
-          <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
-              {{ language.name_local }} - {{ language.code }}
-          </option>
-      {% endfor %}
-  </select>
-  <input type="submit" class="btn-sm btn-outline-danger" value="set">
-</form>
-<!-- Time --> 
-
-{% get_current_timezone as TIME_ZONE %} 
-<form action="" method="POST"> 
-  {% csrf_token %} 
-  <label for="timezone">Time zone:</label> 
-  <select class="form-select-sm" name="timezone"> 
-    {% for tz in timezones %} 
-    <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option> 
-    {% endfor %} 
-  </select> 
-  <input type="submit" class="btn-sm btn-outline-danger" value="set">
-</form> 
-{{ TIME_ZONE }} 
-{{ current_time|timezone:TIME_ZONE }}
- <!-- Отображаем время в выбранном часовом поясе --> 
-
-</div>
-
-<style>
-  .rounded-img {
-    width: 100%;
-    border-radius: 10%;
-  }
-</style>
-
-<div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+<div class="container list_box">
+  <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3">
     {% for p in posts %}
     <div class="col" style="padding-top: 20px">
-      <div class="card">
+      <div class="card post_card">
         <h5>{% trans "Category:" %} {{p.postCategory}}</h5>
         <p>{% trans "Date:" %} {{p.dateCreation|date:"d-m-Y H:i:s"}}</p>
         {% if p.photo %}
-        <img class="rounded-img" src="{{p.photo.url}}" alt="image" />
+        <div class="img_box">
+          <img class="rounded-img" src="{{p.photo.url}}" alt="image" />
+        </div>
         <!-- <img class="card-img-top" src="{{p.photo.url}}" alt="image" /> -->
         {% endif %}
-        <div class="card-body">
-          <h4 class="card-title">{{p.title}}</h4>
-          <p class="card-text">{{p.text|linebreaks|truncatechars:500}}</p>
+        <div class="card-body post_card">
+          <h5 class="card-title">{{p.title}}</h5>
+          <p class="card-text">{{p.text|truncatechars:500}}</p>
           <a
             href="{{ p.get_absolute_url }}"
             target="_blank"
@@ -72,8 +28,5 @@
     {% endfor %}
   </div>
 </div>
-
-
-
 
 {% endblock %}
