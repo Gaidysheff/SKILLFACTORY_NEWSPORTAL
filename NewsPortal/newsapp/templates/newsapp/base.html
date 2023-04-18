@@ -27,8 +27,12 @@
       href="{% static 'newsapp/images/favicon.ico' %}"
       type="image.png"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <style>  body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} darkcyan {% else %} powderblue {% endif %};}</style> -->
   </head>
+
+
+
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -57,7 +61,7 @@
               <li class="nav-item active"><a class="nav-link" href="{% url m.url_name %}">{{m.title}}</a></li>
               {% endfor %}
               {% if request.user.is_authenticated %}
-              <li class="nav-item activek"><a class="nav-link" href="{% url 'logout' %}">{{ user.username }} | Выйти</a></li>
+              <li class="nav-item active"><a class="nav-link" href="{% url 'logout' %}">{{ user.username }} | Выйти</a></li>
               {% else %}
                 <li class="nav-item active"><a class="nav-link" href="{% url 'signup' %}">Регистрация</a></li>
                 <li class="nav-item active"><a class="nav-link" href="{% url 'login' %}">Войти</a></li>

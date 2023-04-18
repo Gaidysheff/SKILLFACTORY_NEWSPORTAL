@@ -27,7 +27,8 @@ class AddPostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['author', 'categoryType', 'postCategory',
-                  'title', 'slug', 'text', 'photo', 'rating', 'status']
+                  'title', 'text', 'photo', 'rating', 'status']
+
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-input', 'size': 58}),
             'slug': forms.URLInput(attrs={'size': 58}),
@@ -106,3 +107,12 @@ class CategorySubscribeForm(forms.ModelForm):
 
 
 """  https://metanit.com/python/django/4.1.php  """
+
+
+# ------------------------------------------------------------------
+
+class EmailPostForm(forms.Form):
+    name = forms.CharField(max_length=25)
+    email = forms.EmailField()
+    to = forms.EmailField()
+    comments = forms.CharField(required=False, widget=forms.Textarea)

@@ -27,8 +27,10 @@ from newsapp.views import (
     set_timezone, PostAPIView, SubscribeView,
     # CategorySubscribeView,
     UnSubscribeView, category_subscription,
+    post_share,
 )
 
+app_name = 'newsapp'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -43,7 +45,8 @@ urlpatterns = [
     #      CategorySubscribeView.as_view(), name='catsubscribe'),
     path('sign/<int:pk>/unsubscribe',
          UnSubscribeView.as_view(), name='unsubscribe'),
-
+    # --------------------------------------------------------------------------------
+    path('post/<slug:post_slug>/share/', post_share, name='post_share'),
     # --------------------------------------------------------------------------------
     path('about/', about, name='about'),
     re_path(r'^archive/(?P<year>[0-9]{4})/', archive, name='archive'),
@@ -71,6 +74,7 @@ urlpatterns = [
          TemplateView.as_view(template_name='swagger-ui.html',
                               extra_context={'schema_url': 'openapi-schema'}),
          name='swagger-ui'),
+
 ]
 
 # ---------------------------Swagger-------------------------------------------
@@ -84,3 +88,4 @@ handler404 = pageNotFound
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+

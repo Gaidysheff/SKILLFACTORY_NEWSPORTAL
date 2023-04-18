@@ -1,28 +1,30 @@
 
 # импортируем функцию для перевода
-from django.forms.models import model_to_dict
-from requests import Response, delete
-from .serializers import PostSerializer
-from rest_framework import generics
-from rest_framework.views import APIView
-import pytz
-from django.utils.translation import gettext as _
-from django.views import View
-
-from django.contrib.auth import logout, login
-from django.contrib.auth.views import LoginView
-from django.core.paginator import Paginator
 from urllib import request
-from django.http import Http404, HttpRequest, HttpResponse, HttpResponseNotFound
+
+import pytz
+from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView
+from django.core.mail import send_mail
+from django.core.paginator import Paginator
+from django.forms.models import model_to_dict
+from django.http import (Http404, HttpRequest, HttpResponse,
+                         HttpResponseNotFound)
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, CreateView, DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.utils import timezone
-from django.contrib.auth.decorators import login_required
+from django.utils.translation import gettext as _
+from django.views import View
+from django.views.generic import CreateView, DeleteView, DetailView, ListView
+from requests import Response, delete
+from rest_framework import generics
+from rest_framework.views import APIView
 
 from .forms import *
 from .models import *
+from .serializers import PostSerializer
 from .utils import *
 
 
@@ -378,3 +380,26 @@ class Index(View):
 >>> form['headline'].value()
 'Initial headline'  
 """
+# ------------------------------------------------------------------
+
+
+def post_share(request, post_id):
+    post = get_object_or_404(Post, id=post_id, status='p')
+    sent = False
+    if request.method == 'POST':
+        form = EmailPostForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            post_url = request.build_absolute_uri(post.get_absolute_url())
+            subject = '{} ({}) recommends you reading " {}"'.format(
+                cd['name'], cd['email'], post.title)
+            message = 'Read "{}" at {}\n\n{}\'s comments: {}'.format(
+                post.title, post_url, cd['name'], cd['comments'])
+            send_mail(subject, message, 'admin@myblog.com', [cd['to']])
+            sent = True
+    else:
+        form = EmailPostForm()
+    return render(request, 'newsapp/share.html', {'post': post, 'form': form, 'sent': sent})
+
+
+""" https://pythonru.com/primery """

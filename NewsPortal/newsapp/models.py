@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.urls import reverse
+from django.utils.text import slugify
 from django.utils.translation import gettext as _
 from django.utils.translation import pgettext_lazy
 
@@ -84,6 +85,10 @@ class Post(models.Model):
 
     def preview(self):
         return '{} ... {}'.format(self.text[0:123], str(self.rating))
+
+    def save(self,  *args, **kwargs):
+        self.slug = slugify(self.title)
+        return super(Post, self).save(*args, **kwargs)
 
     # def get_absolute_url(self):
     #     return reverse('post_detail', args=[str(self.id)])

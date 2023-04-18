@@ -12,6 +12,14 @@
         <div class="card-body">
           <h4 class="card-title">{{post.title}}</h4>
           <p class="card-text">{{post.text|linebreaks}}</p>
+          <!-- ------------------------------- -->
+          <p>
+            <a href="{% url 'post:post_share' post.slug %}">
+              <!-- <a href="return redirect('post:post_share' post.slug)"> -->
+              Share this post
+            </a>
+          </p>
+          <!-- ------------------------------- -->
           <a href="#" target="_blank" class="btn btn-info">Подписаться</a>
         </div>
       </div>
