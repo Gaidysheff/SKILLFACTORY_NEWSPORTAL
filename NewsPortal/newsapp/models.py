@@ -160,6 +160,11 @@ class Subscribe(models.Model):
     email = models.EmailField()
     date = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        verbose_name = 'Подписчик на все новости'
+        verbose_name_plural = 'Подписчики на все новости'
+        ordering = ['-date']
+
     def __str__(self):
         return self.email
 
@@ -177,6 +182,11 @@ class CategorySubscribe(models.Model):
     subscriber = models.EmailField()
     # subscriber = models.OneToOneField(User, on_delete=models.CASCADE)
     categorySubscribed = models.ManyToManyField(Category)
+
+    class Meta:
+        verbose_name = 'Подписчик на категории'
+        verbose_name_plural = 'Подписчики на категории'
+        ordering = ['-subscriber']
 
     def __str__(self):
         return self.subscriber

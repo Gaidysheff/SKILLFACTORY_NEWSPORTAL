@@ -10,14 +10,17 @@
     updates from us.
   </p>
 
-  <form action="{% url 'catsubscribe' %}" method="post">
-    {% csrf_token %}
-    <table>
-      {{ category_subscription }}
-    </table>
-
-    <button type="submit" class="btn-sm btn-outline-success">
-      Подписаться
-    </button>
-  </form>
+  <div class="card">
+    <form class="catsubscribe" action="{% url 'catsubscribe' %}" method="post">
+      {% csrf_token %}
+      <div>
+        <table class="catsubscribe_field">
+          {{ category_subscription }}
+        </table>
+      </div>
+      <button type="submit" class="btn-sm btn-outline-success btn-subscribe">
+        Подписаться
+      </button>
+    </form>
+  </div>
 </div>

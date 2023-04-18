@@ -91,7 +91,7 @@ class CategorySubscribeForm(forms.ModelForm):
         #            }
         labels = {'subscriber': _('Your email :'), 'categorySubscribed': _(
             'Категория для подписки :'), }
-        help_texts = {'subscriber': _('Please, enter your E-mail'), }
+        # help_texts = {'subscriber': _('Please, enter your E-mail'), }
         error_messages = {'subscriber': {
             'max_length': _('This is not correct E-mail'), }, }
 

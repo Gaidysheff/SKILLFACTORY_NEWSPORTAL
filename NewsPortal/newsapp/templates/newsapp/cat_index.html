@@ -1,5 +1,6 @@
 {% extends 'newsapp/base.html' %} {% load newsapp_tags %}{% block content %}
-
+<div></div>
+{% category_subscription %}
 <div class="container">
   <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3">
     {% for p in posts %}
