@@ -8,9 +8,9 @@
         <h5>{% trans "Category:" %} {{p.postCategory}}</h5>
         <p>{% trans "Date:" %} {{p.dateCreation|date:"d-m-Y H:i:s"}}</p>
         {% if p.photo %}
-        <div class="img_box">
+        <a class="img_box" href="{{ p.get_absolute_url }}" target="_blank">
           <img class="rounded-img" src="{{p.photo.url}}" alt="image" />
-        </div>
+        </a>
         <!-- <img class="card-img-top" src="{{p.photo.url}}" alt="image" /> -->
         {% endif %}
         <div class="card-body post_card">

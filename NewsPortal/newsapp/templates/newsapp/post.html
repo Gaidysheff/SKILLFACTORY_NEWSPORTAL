@@ -3,18 +3,18 @@
 <div class="container">
   <div class="row">
     <div class="col" style="padding-top: 20px">
-      <div class="card">
+      <div class="card post_card">
         <h5>Категория: {{post.postCategory}}</h5>
         <p>Дата: {{post.dateCreation|date:"d-m-Y H:i:s"}}</p>
         {% if post.photo %}
         <img class="card-img-top" src="{{post.photo.url}}" alt="image" />
         {% endif %}
-        <div class="card-body">
-          <h4 class="card-title">{{post.title}}</h4>
-          <p class="card-text">{{post.text|linebreaks}}</p>
+        <div class="card-body post_card">
+          <h5>{{post.title}}</h5>
+          <p>{{post.text|linebreaks}}</p>
           <!-- ------------------------------- -->
           <p>
-            <a href="{% url 'post:post_share' post.slug %}">
+            <a href="{% url 'post' post.slug %}">
               <!-- <a href="return redirect('post:post_share' post.slug)"> -->
               Share this post
             </a>
