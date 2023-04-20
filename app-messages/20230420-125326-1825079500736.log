@@ -1,0 +1,44 @@
+Content-Type: multipart/alternative;
+ boundary="===============0452694595749526912=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYyDQuNC3INC60LDRgtC10LPQvtGA0LjQuCBBUiArIDIwMjItMDctMDQgMTE6?=
+ =?utf-8?b?MzI6NTguMjM0MTQzKzAwOjAwICsg0JfQsNGP0LLQu9C10L3QuNGPINCc0LjQvdC+?=
+ =?utf-8?b?0LHQvtGA0L7QvdGLINCg0KQgKyAyMDIyLTA3LTA0IDExOjMyOjU4LjIzNDE0Mysw?=
+ =?utf-8?b?MDowMA==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user10
+Date: Thu, 20 Apr 2023 07:53:26 -0000
+Message-ID: <168197720655.17792.13115730613834804526@GAMEPC>
+
+--===============0452694595749526912==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья от автора user10 из категории {{ post.postCategory
+      }}
+    </h1>
+    <p></p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/smth-again/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============0452694595749526912==--
+
+-------------------------------------------------------------------------------

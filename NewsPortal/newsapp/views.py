@@ -152,22 +152,14 @@ def category_subscription(request):
         if form.is_valid():
             form.save()
             # return HttpResponse(f'<h2> Вы подписались на данную категорию</h2>')
-            return redirect('home')
+            # return redirect('home')
+            return render(request, 'newsapp/subscribed.html')
         else:
             return HttpResponse('Invalid data')
     else:
         form = CategorySubscribeForm()
         return render(request, 'newsapp/category_subscription.html', {'category_subscription': form})
     
-@login_required
-def cat_sub_new(request, pk):
-    User.request.user
-    category = Category.objects.get(id=pk)
-    category.subscribers.add(User)
-
-    message = f'<h2> Вы подписались на данную категорию</h2>'
-    return render(request, 'newsapp/cat_sub_new.html', {'category': category, 'message': message})
-
 
 # class CategorySubscribeView(LoginRequiredMixin, CreateView):
 #     form_class = CategorySubscribeForm

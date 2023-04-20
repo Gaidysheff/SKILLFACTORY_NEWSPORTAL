@@ -1,0 +1,41 @@
+Content-Type: multipart/alternative;
+ boundary="===============0877998236684100555=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, maria_bric
+Date: Thu, 20 Apr 2023 08:49:35 -0000
+Message-ID: <168198057565.9896.8539324185981711778@GAMEPC>
+
+--===============0877998236684100555==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья SomethingSomethingSomethingSomething от автора maria_bric опубликована {{
+      post.dateCreation }} в категории Война.
+    </h1>
+    <p></p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/somethingsomethingsomethingsomething/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============0877998236684100555==--
+
+-------------------------------------------------------------------------------
