@@ -1,21 +1,23 @@
 {% load i18n %}
+
 <div
   class="container text-center"
   style="margin-top: 50px; margin-bottom: 50px"
 >
-  <h4 class="footer-title text-uppercase editContent mb-lg-4 mb-3">
+  <h4 class="footer-title text-uppercase warning-sign">
     Подписаться на выбранную категорию
   </h4>
+
   <p>
     By subscribing to our mailing list you will always get the latest news and
     updates from us.
   </p>
 
-  <div class="card">
+  <div>
     <form class="catsubscribe" action="{% url 'catsubscribe' %}" method="post">
       {% csrf_token %}
       <div>
-        <table class="catsubscribe_field">
+        <table class="form-control catsubscribe_field">
           {{ category_subscription }}
         </table>
       </div>

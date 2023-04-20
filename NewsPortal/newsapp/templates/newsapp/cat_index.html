@@ -1,6 +1,19 @@
+<style>
+  .warning-sign {
+    color: #ff0303;
+    font-style: italic;
+    margin: 100px auto 20px auto;
+    text-align: center;
+  }
+</style>
 {% extends 'newsapp/base.html' %} {% load newsapp_tags %}{% block content %}
 <div></div>
-{% category_subscription %}
+{% if user.is_authenticated %} {% category_subscription %} {% else %}
+<h4 class="warning-sign">
+  Пожалуйста, войдите или зарегистрируйтесь для того, чтобы подписаться на
+  рассылку в данной категории
+</h4>
+{% endif %}
 <div class="container">
   <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3">
     {% for p in posts %}

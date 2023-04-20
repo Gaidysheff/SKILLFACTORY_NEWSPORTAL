@@ -1,13 +1,14 @@
 from ast import arg
-from django.forms import EmailInput, CharField
-from django.utils.translation import gettext_lazy as _
 from distutils.text_file import TextFile
-from django.contrib.auth.forms import AuthenticationForm
 from turtle import width
+
 from django import forms
-from .models import *
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.core.exceptions import ValidationError
-from django.contrib.auth.forms import UserCreationForm
+
+from django.utils.translation import gettext_lazy as _
+
+from .models import *
 
 
 class AddPostForm(forms.ModelForm):
@@ -38,7 +39,8 @@ class AddPostForm(forms.ModelForm):
     def clean_title(self):
         title = self.cleaned_data['title']
         if len(title) > 200:
-            raise ValidationError('Длина превышает 200 символов')
+            raise ValidationError(
+                'Длина превышает 200 символов')
         return title
 
 
