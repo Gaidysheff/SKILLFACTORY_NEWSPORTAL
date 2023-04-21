@@ -1,0 +1,46 @@
+Content-Type: multipart/alternative;
+ boundary="===============4357930659580745674=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, <QuerySet [{'email': 'user10@example.com'},
+ {'email': 'user10@example.com'}, {'email': 'admin@example.com'},
+ {'email': 'user12@r12.ru'}, {'email': 'unknown@example.com'},
+ {'email': 'checkmail7@example.com'}, {'email': 'checkmail3@example.com'},
+ {'email': 'checkmail5@example.com'}, {'email': 'checkmail4@example.com'},
+ {'email': 'checkmail2@example.com'}, {'email': 'checkmail1@example.com'}]>
+Date: Fri, 21 Apr 2023 07:26:09 -0000
+Message-ID: <168206196942.2340.11426207817261327142@HOME_PC>
+
+--===============4357930659580745674==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "assdwewecccx"" от автора user10 опубликована
+      21 апреля 2023 г. 10:26 в категории "Политика".
+    </h1>
+    <p>None</p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/assdwewecccx/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============4357930659580745674==--
+
+-------------------------------------------------------------------------------

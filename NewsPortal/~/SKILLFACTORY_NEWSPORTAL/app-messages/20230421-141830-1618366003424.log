@@ -1,0 +1,44 @@
+Content-Type: multipart/alternative;
+ boundary="===============3927518862025435777=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, ['user10@example.com', 'user10@example.com',
+ 'admin@example.com', 'user12@r12.ru', 'unknown@example.com',
+ 'checkmail7@example.com', 'checkmail3@example.com', 'checkmail5@example.com',
+ 'checkmail4@example.com', 'checkmail2@example.com', 'checkmail1@example.com']
+Date: Fri, 21 Apr 2023 09:18:30 -0000
+Message-ID: <168206871046.8288.6699732032220261223@HOME_PC>
+
+--===============3927518862025435777==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "sdfsf"" от автора maria_bric опубликована
+      21 апреля 2023 г. 12:18 в категории "Война".
+    </h1>
+    <p>None</p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/sdfsf/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============3927518862025435777==--
+
+-------------------------------------------------------------------------------
