@@ -77,9 +77,8 @@ def notify_post(sender, instance, **kwargs):
         last_post_category = _post.postCategory
         # вытаскиваем название категории нового поста
 
-
         subscribers_in_category = CategorySubscribe.objects.raw(
-            "SELECT subscriber FROM CategorySubscribe WHERE categorySubscribed = %s", [last_post_category])
+            "SELECT subscriber FROM newsapp_categorysubscribe WHERE categorySubscribed = %s", [last_post_category])
         # из модели CategorySubscribe получаем значения полей email, у которых категория совпадает с категорией последнего поста.
         category_mailing_list = ''
         for el in subscribers_in_category:
@@ -88,13 +87,12 @@ def notify_post(sender, instance, **kwargs):
 
         html = render_to_string(
             'newsapp/mail_category.html',
-            { 
-            'user': category_mailing_list, 
-            'post': instance, 
-            # 'Link': f'{settings.SITE_URL_SEND}/category/<slug:postCategory_slug>/'
+            {
+                'user': category_mailing_list,
+                'post': instance,
+                # 'Link': f'{settings.SITE_URL_SEND}/category/<slug:postCategory_slug>/'
             },
         )
-
 
         post = Post.objects.last()
         msg = EmailMultiAlternatives(
