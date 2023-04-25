@@ -1,0 +1,39 @@
+Content-Type: multipart/alternative;
+ boundary="===============7699031818500326872=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8=?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user9@r50.ru, 
+Date: Tue, 25 Apr 2023 18:37:24 -0000
+Message-ID: <168244784428.1368.142890151792300378@GAMEPC>
+
+--===============7699031818500326872==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "New Chinese cars" от автора user10 опубликована
+      25 апреля 2023 г. 21:37 в категории "Авторынок".
+    </h1>
+    <p>New Chinese carsNew Chinese carsNew Chinese carsNew Chinese carsNew Chinese cars</p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/new-chinese-cars/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============7699031818500326872==--
+
+-------------------------------------------------------------------------------

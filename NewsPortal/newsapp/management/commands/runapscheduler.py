@@ -67,7 +67,7 @@ def my_job():
             'link': settings.SITE_URL,
             'posts': posts,
             'categories': categories,
-            # 'Link': f'{settings.SITE_URL_SEND}/post/<slug:post_slug>/'
+            # 'Link': f'{settings.SITE_URL}/post/<slug:post_slug>/'
         },
     )
     msg = EmailMultiAlternatives(

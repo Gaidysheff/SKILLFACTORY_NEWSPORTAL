@@ -1,0 +1,126 @@
+Content-Type: multipart/alternative;
+ boundary="===============5178932899586929940=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user10@example.com, user10@example.com,
+ admin@example.com, user12@r12.ru, unknown@example.com,
+ checkmail7@example.com, checkmail3@example.com, checkmail5@example.com,
+ checkmail4@example.com, checkmail2@example.com, checkmail1@example.com, 
+Date: Tue, 25 Apr 2023 18:48:35 -0000
+Message-ID: <168244851514.10932.17879129991005444159@GAMEPC>
+
+--===============5178932899586929940==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "Finances &amp; Insurance" от автора user10 опубликована
+      25 апреля 2023 г. 21:48 в категории "Финансы".
+    </h1>
+    <p>Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance</p>
+    http://127.0.0.1:8000/post/&lt;slug:post_slug&gt;/
+    <p>
+      <a href="http://127.0.0.1:8000/post/finances-insurance/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============5178932899586929940==--
+
+-------------------------------------------------------------------------------
+Content-Type: multipart/alternative;
+ boundary="===============9056779748684686651=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user9@r50.ru, user10@example.com, 
+Date: Tue, 25 Apr 2023 18:48:35 -0000
+Message-ID: <168244851515.10932.2038400030015027718@GAMEPC>
+
+--===============9056779748684686651==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "Finances &amp; Insurance" от автора user10 опубликована
+      25 апреля 2023 г. 21:48 в категории "Финансы".
+    </h1>
+    <p>Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance</p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/finances-insurance/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============9056779748684686651==--
+
+-------------------------------------------------------------------------------
+Content-Type: multipart/alternative;
+ boundary="===============0140662784438395078=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user9@r50.ru, user10@example.com, user7@r66.ru, 
+Date: Tue, 25 Apr 2023 18:48:35 -0000
+Message-ID: <168244851515.10932.7317987185608352437@GAMEPC>
+
+--===============0140662784438395078==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "Finances &amp; Insurance" от автора user10 опубликована
+      25 апреля 2023 г. 21:48 в категории "Финансы".
+    </h1>
+    <p>Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance Finances &amp; Insurance</p>
+
+    <p>
+      <a href="http://127.0.0.1:8000/post/finances-insurance/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============0140662784438395078==--
+
+-------------------------------------------------------------------------------

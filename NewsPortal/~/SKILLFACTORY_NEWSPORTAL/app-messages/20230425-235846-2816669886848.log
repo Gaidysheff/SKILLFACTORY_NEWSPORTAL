@@ -1,0 +1,41 @@
+Content-Type: multipart/alternative;
+ boundary="===============0902859542045603620=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user7@r66.ru, user9@r50.ru, 
+Date: Tue, 25 Apr 2023 18:58:46 -0000
+Message-ID: <168244912682.2136.16371753111421640310@GAMEPC>
+
+--===============0902859542045603620==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "Second World War" от автора user10 опубликована
+      25 апреля 2023 г. 21:58 в категории "Война".
+    </h1>
+    <p>Second World War Second World War Second World War Second World War</p>
+    http://127.0.0.1:8000/post/zayavleniya-minoborony-rf
+    <p>
+      <a href="http://127.0.0.1:8000/post/second-world-war/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============0902859542045603620==--
+
+-------------------------------------------------------------------------------

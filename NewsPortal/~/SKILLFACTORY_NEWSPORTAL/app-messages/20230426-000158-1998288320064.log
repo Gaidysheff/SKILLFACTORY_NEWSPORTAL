@@ -1,0 +1,41 @@
+Content-Type: multipart/alternative;
+ boundary="===============4834874928792636192=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0J3QvtCy0LDRjyDRgdGC0LDRgtGM0Y8g0L7RgiDQsNCy0YLQvtGA0LAgbWFyaWFf?=
+ =?utf-8?b?YnJpYw==?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user10@example.com, user7@r66.ru, 
+Date: Tue, 25 Apr 2023 19:01:58 -0000
+Message-ID: <168244931851.18152.13067730542874506633@GAMEPC>
+
+--===============4834874928792636192==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость</title>
+  </head>
+  <body>
+    <h1>
+      Новая статья "War and Economy" от автора user10 опубликована
+      25 апреля 2023 г. 22:01 в категории "Война".
+    </h1>
+    <p>War and EconomyWar and EconomyWar and EconomyWar and EconomyWar and EconomyWar and EconomyWar and EconomyWar and EconomyWar and EconomyWar and Economy</p>
+    http://127.0.0.1:8000/post/zayavleniya-minoborony-rf
+    <p>
+      <a href="http://127.0.0.1:8000/post/war-and-economy/"
+        >Перейти на статью</a
+      >
+    </p>
+  </body>
+</html>
+
+--===============4834874928792636192==--
+
+-------------------------------------------------------------------------------
