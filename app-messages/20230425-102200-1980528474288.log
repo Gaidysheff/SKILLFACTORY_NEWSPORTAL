@@ -1,0 +1,39 @@
+Content-Type: multipart/alternative;
+ boundary="===============2692485595033177445=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0KHRgtCw0YLRjNC4INC30LAg0L3QtdC00LXQu9GO?=
+From: gaidysheff@yandex.ru
+To: gaidysheff@mail.ru, user12@r12.ru, admin@example.com, unknown@example.com,
+ checkmail2@example.com, checkmail7@example.com, checkmail1@example.com,
+ user10@example.com, checkmail4@example.com, checkmail5@example.com,
+ checkmail3@example.com, 
+Date: Tue, 25 Apr 2023 05:22:00 -0000
+Message-ID: <168240012005.8224.14049346978842172454@GAMEPC>
+
+--===============2692485595033177445==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи за неделю</title>
+  </head>
+  <body>
+    <h1>Здравствуйте! Новые статьи за последнюю неделю</h1>
+    <ul>
+      
+      <li>
+        <a href="http://127.0.0.1:8000/post/new-test/">new Test</a>
+      </li>
+      
+    </ul>
+  </body>
+</html>
+
+--===============2692485595033177445==--
+
+-------------------------------------------------------------------------------

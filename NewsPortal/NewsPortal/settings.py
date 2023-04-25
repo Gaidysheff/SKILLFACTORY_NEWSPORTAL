@@ -14,6 +14,12 @@ import logging
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+# env_path = Path('.')/'.env'
+# load_dotenv(dotenv_path=env_path)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -42,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'newsapp.apps.NewsappConfig',
     'rest_framework',
-
+    "django_apscheduler",
 ]
 
 MIDDLEWARE = [
@@ -153,12 +159,21 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')
 ]
 
+SITE_URL = 'http://127.0.0.1:8000'
+
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_SSL = True
 
+DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
+DEFAULT_TO_EMAIL = os.getenv('DEFAULT_TO_EMAIL')
+
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-# EMAIL_FILE_PATH = '/Users/admin/Projects/Skillfactory/SKILLFACTORY_NEWSPORTAL/app-messages'
 EMAIL_FILE_PATH = '~/SKILLFACTORY_NEWSPORTAL/app-messages'
+# EMAIL_FILE_PATH = '/Users/admin/Projects/Skillfactory/SKILLFACTORY_NEWSPORTAL/app-messages'
+
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+
+APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds

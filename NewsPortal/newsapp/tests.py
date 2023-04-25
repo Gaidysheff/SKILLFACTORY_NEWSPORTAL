@@ -6,4 +6,3 @@ from django.test import TestCase
 from django.contrib import auth
 
 auth.get_user(request).username
-

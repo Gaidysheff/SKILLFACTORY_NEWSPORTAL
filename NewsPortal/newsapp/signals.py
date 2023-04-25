@@ -6,35 +6,36 @@ from django.template.loader import render_to_string
 from .models import Post, Subscribe, Category, CategorySubscribe
 
 
-# @receiver(post_save, sender=Post)
-# def notify_post(sender, instance, created, **kwargs):
-#     if created:
-#         subscribers = list(Subscribe.objects.values_list('email', flat=True))
-#         mailing_list = ''
-#         for el in subscribers:
-#             mailing_list += str(el)
-#             mailing_list += ', '
-#         html = render_to_string(
-#             'newsapp/mail.html',
-#             {
-#                 'user': mailing_list,
-#                 'post': instance,
-#                 # 'Link': f'{settings.SITE_URL_SEND}/post/<slug:post_slug>/'
-#             },
-#         )
+@receiver(post_save, sender=Post)
+def notify_post(sender, instance, created, **kwargs):
+    if created:
+        subscribers = list(Subscribe.objects.values_list('email', flat=True))
+        mailing_list = ''
+        for el in subscribers:
+            mailing_list += str(el)
+            mailing_list += ', '
+        html = render_to_string(
+            'newsapp/mail.html',
+            {
+                'user': mailing_list,
+                'post': instance,
+                # 'Link': f'{settings.SITE_URL_SEND}/post/<slug:post_slug>/'
+            },
+        )
 
-#         # _post = Post.objects.all()
-#         # post = _post[len(_post)-1]
-#         post = Post.objects.last()
+        # _post = Post.objects.all()
+        # post = _post[len(_post)-1]
+        post = Post.objects.last()
 
-#         msg = EmailMultiAlternatives(
-#             subject=f'Новая статья от автора { post.author }',
-#             from_email='gaidysheff@yandex.ru',
-#             to=['gaidysheff@mail.ru', mailing_list]
-#         )
+        msg = EmailMultiAlternatives(
+            subject=f'Новая статья от автора { post.author }',
+            from_email='gaidysheff@yandex.ru',
+            to=['gaidysheff@mail.ru', mailing_list]
+        )
 
-#         msg.attach_alternative(html, 'text/html')
-#         msg.send()
+        msg.attach_alternative(html, 'text/html')
+        msg.send()
+
 
 # ==================== Через m2m ==================================
 # @receiver(m2m_changed, sender=Category)
