@@ -1,5 +1,6 @@
 
 # импортируем функцию для перевода
+import django
 from urllib import request
 
 import pytz
@@ -21,11 +22,13 @@ from django.views.generic import CreateView, DeleteView, DetailView, ListView
 from requests import Response, delete
 from rest_framework import generics
 from rest_framework.views import APIView
+from django.views.generic.edit import FormView
 
 from .forms import *
 from .models import *
 from .serializers import PostSerializer
 from .utils import *
+# from .tasks import send_postCreation_email_task
 
 
 class PostsHome(DataMixin, ListView):
@@ -47,6 +50,7 @@ class PostsHome(DataMixin, ListView):
     def post(self, request):
         request.session['django_timezone'] = request.POST['timezone']
         return redirect('home')
+    
 
 
 class PostCategory(DataMixin, ListView):
@@ -78,18 +82,23 @@ class ShowPost(DataMixin, DetailView):
         return dict(list(context.items()) + list(c_def.items()))
 
 
-# class AddPage(LoginRequiredMixin, DataMixin, CreateView):
-#     form_class = AddPostForm
-#     template_name = 'newsapp/addpage.html'
-#     success_url = reverse_lazy('home')
-#     login_url = reverse_lazy('home')
-#     raise_exception = True
-#     # вывести '403 Forbidden' для неавторизованного пользователя (закоментить строку - тогда перенаправление на 'home')
+class AddPage(LoginRequiredMixin, DataMixin, CreateView):
+    form_class = AddPostForm
+    template_name = 'newsapp/addpage.html'
+    success_url = reverse_lazy('home')
+    login_url = reverse_lazy('home')
+    raise_exception = True
+    # вывести '403 Forbidden' для неавторизованного пользователя 
+    # (закоментить строку - тогда перенаправление на 'home')
 
-#     def get_context_data(self, *, object_list=None, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         c_def = self.get_user_context(title="Добавление статьи")
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        c_def = self.get_user_context(title="Добавление статьи")
         return dict(list(context.items()) + list(c_def.items()))
+    
+    # def send_email(self):
+    #     subscriber = Subscribe.objects.all()
+    #     send_postCreation_email_task.delay(subscriber['email'])
 
 
 class SignUpUser(DataMixin, CreateView):
@@ -143,7 +152,12 @@ class SubscribeView(LoginRequiredMixin, CreateView):
     form_class = SubscribeForm
     success_url = reverse_lazy('home')
     login_url = reverse_lazy('login')
-    # raise_exception = True
+    
+    def form_valid(self, form):
+        form.save()
+        form.send_email()
+        msg = 'Вы подписались на рассылку новостей'
+        return HttpResponse(msg)
 
 @login_required
 def category_subscription(request):
@@ -151,6 +165,7 @@ def category_subscription(request):
         form = CategorySubscribeForm(request.POST)
         if form.is_valid():
             form.save()
+            form.send_email()
             # return HttpResponse(f'<h2> Вы подписались на данную категорию</h2>')
             # return redirect('home')
             return render(request, 'newsapp/subscribed.html')

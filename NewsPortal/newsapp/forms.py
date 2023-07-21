@@ -1,5 +1,6 @@
 from ast import arg
 from distutils.text_file import TextFile
+from django.http import HttpResponse
 from turtle import width
 
 from django import forms
@@ -9,7 +10,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
 from .models import *
-
+from .tasks import send_subscribe_email_task
 
 class AddPostForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -74,16 +75,24 @@ class SubscribeForm(forms.ModelForm):
             'size': 30,
             'placeholder': "Your email ...",
         }))
+    
+    def send_email(self):
+        send_subscribe_email_task.delay(self.cleaned_data['email'],)
 
     class Meta:
         model = Subscribe
         fields = ('email', )
 
 
+
+
 class CategorySubscribeForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['categorySubscribed'].empty_label = 'Категория не выбрана'
+
+    def send_email(self):
+        send_subscribe_email_task.delay(self.cleaned_data['subscriber'], )
 
     class Meta:
         model = CategorySubscribe

@@ -176,11 +176,20 @@ ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 DEFAULT_TO_EMAIL = os.getenv('DEFAULT_TO_EMAIL')
+# DEFAULT_FROM_EMAIL = 'test_from_email@test.com'
+# DEFAULT_TO_EMAIL = 'test_to_email@test.com'
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = '~/SKILLFACTORY_NEWSPORTAL/app-messages'
 # EMAIL_FILE_PATH = '/Users/admin/Projects/Skillfactory/SKILLFACTORY_NEWSPORTAL/app-messages'
+# EMAIL_FILE_PATH = '/Users/admin/Projects/Skillfactory/SKILLFACTORY_NEWSPORTAL/a_celery_test'
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 
 APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
