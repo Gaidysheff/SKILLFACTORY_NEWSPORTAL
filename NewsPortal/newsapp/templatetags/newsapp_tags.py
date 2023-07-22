@@ -2,6 +2,7 @@ from django import template
 from newsapp.models import *
 from newsapp.forms import SubscribeForm, CategorySubscribeForm
 
+
 register = template.Library()
 
 

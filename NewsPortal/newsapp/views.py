@@ -28,7 +28,7 @@ from .forms import *
 from .models import *
 from .serializers import PostSerializer
 from .utils import *
-# from .tasks import send_postCreation_email_task
+from .tasks import send_postCreation_email_task
 
 
 class PostsHome(DataMixin, ListView):
@@ -96,9 +96,14 @@ class AddPage(LoginRequiredMixin, DataMixin, CreateView):
         c_def = self.get_user_context(title="Добавление статьи")
         return dict(list(context.items()) + list(c_def.items()))
     
-    # def send_email(self):
-    #     subscriber = Subscribe.objects.all()
-    #     send_postCreation_email_task.delay(subscriber['email'])
+    def form_valid(self, form):
+        form.save()
+        form.send_email()
+        return redirect('home')
+        # msg = 'Вы создали новую статью'
+        # return HttpResponse(msg)
+    
+
 
 
 class SignUpUser(DataMixin, CreateView):

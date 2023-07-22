@@ -10,7 +10,9 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
 from .models import *
-from .tasks import send_subscribe_email_task
+from .tasks import send_subscribe_email_task, send_subscribe_category_email_task
+
+from .tasks import send_postCreation_email_task
 
 class AddPostForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
@@ -43,6 +45,10 @@ class AddPostForm(forms.ModelForm):
             raise ValidationError(
                 'Длина превышает 200 символов')
         return title
+    
+    def send_email(self):
+        self.subscriber = list(Subscribe.objects.values_list('email', flat=True))
+        send_postCreation_email_task.delay(self.subscriber, self.cleaned_data['title'], self.cleaned_data['text'])
 
 
 class SignUpUserForm(UserCreationForm):
@@ -92,7 +98,7 @@ class CategorySubscribeForm(forms.ModelForm):
         self.fields['categorySubscribed'].empty_label = 'Категория не выбрана'
 
     def send_email(self):
-        send_subscribe_email_task.delay(self.cleaned_data['subscriber'], )
+        send_subscribe_category_email_task.delay(self.cleaned_data['subscriber'])
 
     class Meta:
         model = CategorySubscribe
