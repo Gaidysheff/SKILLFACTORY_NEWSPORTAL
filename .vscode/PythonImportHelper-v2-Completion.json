@@ -74,6 +74,14 @@
         "documentation": {}
     },
     {
+        "label": "crontab",
+        "importPath": "celery.schedules",
+        "description": "celery.schedules",
+        "isExtraImport": true,
+        "detail": "celery.schedules",
+        "documentation": {}
+    },
+    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
@@ -96,6 +104,14 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -533,6 +549,38 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "BlockingScheduler",
         "importPath": "apscheduler.schedulers.blocking",
         "description": "apscheduler.schedulers.blocking",
@@ -605,6 +653,14 @@
         "documentation": {}
     },
     {
+        "label": "render_to_string",
+        "importPath": "django.template.loader",
+        "description": "django.template.loader",
+        "isExtraImport": true,
+        "detail": "django.template.loader",
+        "documentation": {}
+    },
+    {
         "label": "EmailMultiAlternatives",
         "importPath": "django.core.mail",
         "description": "django.core.mail",
@@ -622,6 +678,30 @@
     },
     {
         "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMultiAlternatives",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
         "importPath": "django.core.mail",
         "description": "django.core.mail",
         "isExtraImport": true,
@@ -900,6 +980,14 @@
         "description": "django.template",
         "isExtraImport": true,
         "detail": "django.template",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_FROM_EMAIL",
+        "importPath": "NewsPortal.settings",
+        "description": "NewsPortal.settings",
+        "isExtraImport": true,
+        "detail": "NewsPortal.settings",
         "documentation": {}
     },
     {
@@ -1305,6 +1393,31 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "rpyc.cli.rpyc_classic",
+        "description": "rpyc.cli.rpyc_classic",
+        "isExtraImport": true,
+        "detail": "rpyc.cli.rpyc_classic",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "rpyc.cli.rpyc_registry",
+        "description": "rpyc.cli.rpyc_registry",
+        "isExtraImport": true,
+        "detail": "rpyc.cli.rpyc_registry",
+        "documentation": {}
+    },
+    {
         "label": "TimezoneMiddleware",
         "kind": 6,
         "importPath": "NewsPortal.NewsPortal.basic.middlewares",
@@ -1327,7 +1440,16 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.celery",
         "description": "NewsPortal.NewsPortal.celery",
-        "peekOfCode": "app = Celery('NewsPortal')\napp.config_from_object('django.conf:settings', namespace = 'CELERY')\napp.autodiscover_tasks()",
+        "peekOfCode": "app = Celery('NewsPortal')\napp.config_from_object('django.conf:settings', namespace = 'CELERY')\napp.autodiscover_tasks()\napp.conf.beat_schedule = {\n        \"WEEKLY_NOTIFICATION\": {\n        \"task\": 'newsapp.tasks.send_weekly_notification_email',\n        # \"schedule\": 5.0,\n        \"schedule\": crontab(hour=8, minute=0, day_of_week=1),\n    },\n}",
+        "detail": "NewsPortal.NewsPortal.celery",
+        "documentation": {}
+    },
+    {
+        "label": "app.conf.beat_schedule",
+        "kind": 5,
+        "importPath": "NewsPortal.NewsPortal.celery",
+        "description": "NewsPortal.NewsPortal.celery",
+        "peekOfCode": "app.conf.beat_schedule = {\n        \"WEEKLY_NOTIFICATION\": {\n        \"task\": 'newsapp.tasks.send_weekly_notification_email',\n        # \"schedule\": 5.0,\n        \"schedule\": crontab(hour=8, minute=0, day_of_week=1),\n    },\n}",
         "detail": "NewsPortal.NewsPortal.celery",
         "documentation": {}
     },
@@ -1687,7 +1809,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "APSCHEDULER_DATETIME_FORMAT = \"N j, Y, f:s a\"\nAPSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "APSCHEDULER_DATETIME_FORMAT = \"N j, Y, f:s a\"\nAPSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1696,7 +1818,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds\nCELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1705,7 +1827,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "CELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "CELERY_BROKER_URL = 'redis://localhost:6379'\nCELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,\n#     #     \"args\": (10, 10),",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1714,7 +1836,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "CELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "CELERY_RESULT_BACKEND = 'redis://localhost:6379'\nCELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,\n#     #     \"args\": (10, 10),\n#     # },",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1723,7 +1845,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "CELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "CELERY_ACCEPT_CONTENT = ['application/json']\nCELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,\n#     #     \"args\": (10, 10),\n#     # },\n#     \"WEEKLY_NOTIFICATION\": {",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1732,7 +1854,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "CELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "CELERY_TASK_SERIALIZER = 'json'\nCELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,\n#     #     \"args\": (10, 10),\n#     # },\n#     \"WEEKLY_NOTIFICATION\": {\n#         \"task\": 'newsapp.tasks.send_weekly_notification_email',",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -1741,7 +1863,7 @@
         "kind": 5,
         "importPath": "NewsPortal.NewsPortal.settings",
         "description": "NewsPortal.NewsPortal.settings",
-        "peekOfCode": "CELERY_RESULT_SERIALIZER = 'json'",
+        "peekOfCode": "CELERY_RESULT_SERIALIZER = 'json'\n# CELERY_BEAT_SCHEDULE = {\n#     # \"scheduled_task\": {\n#     #     \"task\": 'newsapp.tasks.add',\n#     #     \"schedule\": 5.0,\n#     #     \"args\": (10, 10),\n#     # },\n#     \"WEEKLY_NOTIFICATION\": {\n#         \"task\": 'newsapp.tasks.send_weekly_notification_email',\n#         \"schedule\": 5.0,",
         "detail": "NewsPortal.NewsPortal.settings",
         "documentation": {}
     },
@@ -2299,7 +2421,7 @@
         "kind": 2,
         "importPath": "NewsPortal.newsapp.tasks",
         "description": "NewsPortal.newsapp.tasks",
-        "peekOfCode": "def send_subscribe_category_email_task(email):\n    logger.info('Confirmation email to subscriber for category has been sent')\n    return send_subscribe_category_email(email)\n@shared_task(name='send_postCreation_email_task')\ndef send_postCreation_email_task(email, title, text):\n    logger.info('Confirmation email that a new article has been created')\n    return send_postCreation_email(email, title, text)\n# @shared_task\n# def add(x, y):\n#     return x + y",
+        "peekOfCode": "def send_subscribe_category_email_task(email):\n    logger.info('Confirmation email to subscriber for category has been sent')\n    return send_subscribe_category_email(email)\n@shared_task(name='send_postCreation_email_task')\ndef send_postCreation_email_task(email, title, text):\n    logger.info('Confirmation email that a new article has been created')\n    return send_postCreation_email(email, title, text)\n@shared_task\ndef send_weekly_notification_email():\n    today = datetime.now()",
         "detail": "NewsPortal.newsapp.tasks",
         "documentation": {}
     },
@@ -2308,7 +2430,16 @@
         "kind": 2,
         "importPath": "NewsPortal.newsapp.tasks",
         "description": "NewsPortal.newsapp.tasks",
-        "peekOfCode": "def send_postCreation_email_task(email, title, text):\n    logger.info('Confirmation email that a new article has been created')\n    return send_postCreation_email(email, title, text)\n# @shared_task\n# def add(x, y):\n#     return x + y",
+        "peekOfCode": "def send_postCreation_email_task(email, title, text):\n    logger.info('Confirmation email that a new article has been created')\n    return send_postCreation_email(email, title, text)\n@shared_task\ndef send_weekly_notification_email():\n    today = datetime.now()\n    last_week = today - timedelta(days=7)\n    posts = Post.objects.filter(dateCreation__gte=last_week)\n    categories = set(posts.values_list('postCategory__name', flat=True))\n    subscribers_list = ''",
+        "detail": "NewsPortal.newsapp.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "send_weekly_notification_email",
+        "kind": 2,
+        "importPath": "NewsPortal.newsapp.tasks",
+        "description": "NewsPortal.newsapp.tasks",
+        "peekOfCode": "def send_weekly_notification_email():\n    today = datetime.now()\n    last_week = today - timedelta(days=7)\n    posts = Post.objects.filter(dateCreation__gte=last_week)\n    categories = set(posts.values_list('postCategory__name', flat=True))\n    subscribers_list = ''\n    for cat in categories:\n        subscriber = list(CategorySubscribe.objects.filter(\n            categorySubscribed__name=cat).values_list('subscriber', flat=True))\n        subscribers_list += str(subscriber)",
         "detail": "NewsPortal.newsapp.tasks",
         "documentation": {}
     },
@@ -2317,7 +2448,7 @@
         "kind": 5,
         "importPath": "NewsPortal.newsapp.tasks",
         "description": "NewsPortal.newsapp.tasks",
-        "peekOfCode": "logger = get_task_logger(__name__)\n# @task(name='send_postCreation_email_task')\n# def send_postCreation_email_task(email):\n#     logger.info('Info email to subscriber has been sent')\n#     return send_postCreation_email(email)\n@shared_task(name='send_subscribe_email_task')\ndef send_subscribe_email_task(email):\n    logger.info('Confirmation email to subscriber has been sent')\n    return send_subscribe_email(email,)\n@shared_task(name='send_subscribe_category_email_task')",
+        "peekOfCode": "logger = get_task_logger(__name__)\n@shared_task(name='send_subscribe_email_task')\ndef send_subscribe_email_task(email):\n    logger.info('Confirmation email to subscriber has been sent')\n    return send_subscribe_email(email,)\n@shared_task(name='send_subscribe_category_email_task')\ndef send_subscribe_category_email_task(email):\n    logger.info('Confirmation email to subscriber for category has been sent')\n    return send_subscribe_category_email(email)\n@shared_task(name='send_postCreation_email_task')",
         "detail": "NewsPortal.newsapp.tasks",
         "documentation": {}
     },

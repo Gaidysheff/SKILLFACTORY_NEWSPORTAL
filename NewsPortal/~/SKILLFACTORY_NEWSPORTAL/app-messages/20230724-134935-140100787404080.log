@@ -1,0 +1,31 @@
+Content-Type: multipart/alternative;
+ boundary="===============1174376978335994400=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0J/Rg9Cx0LvQuNC60LDRhtC40Lgg0LfQsCDQvdC10LTQtdC70Y4=?=
+From: gaidysheff@yandex.ru
+To: test@test.com, 
+Date: Mon, 24 Jul 2023 10:49:35 -0000
+Message-ID: <169019577548.223817.830785833962440199@XiaomiA30>
+
+--===============1174376978335994400==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи за неделю</title>
+  </head>
+  <body>
+    <h1>Здравствуйте! Новые статьи за последнюю неделю</h1>
+    <ul>
+      
+    </ul>
+  </body>
+</html>
+--===============1174376978335994400==--
+
+-------------------------------------------------------------------------------

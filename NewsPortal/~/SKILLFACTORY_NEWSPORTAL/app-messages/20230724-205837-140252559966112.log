@@ -1,0 +1,53 @@
+Content-Type: multipart/alternative;
+ boundary="===============4753479708937903801=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0J/Rg9Cx0LvQuNC60LDRhtC40Lgg0LfQsCDQvdC10LTQtdC70Y4=?=
+From: gaidysheff@yandex.ru
+To: 'user8@example.com', 'user7@r66.ru', 'user11@r11.ru',
+ 'new_subscribe_for_category@test.com', 
+Date: Mon, 24 Jul 2023 17:58:37 -0000
+Message-ID: <169022151796.274865.11786577805436440675@XiaomiA30>
+
+--===============4753479708937903801==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Статьи за неделю</title>
+  </head>
+  <body>
+    <h1>Здравствуйте! Новые статьи за последнюю неделю</h1>
+    <ul>
+      
+      <h1>
+        Новая статья "New Article -2" от автора user10 опубликована
+        24 июля 2023 г. 18:21 в категории "Экономика".
+      </h1>
+      <li>
+        <a href="http://127.0.0.1:8000/post/new-article-2/">Перейти на статью "New Article -2"</a>
+      </li>
+      
+      <h1>
+        Новая статья "New Article -1" от автора maria_bric опубликована
+        24 июля 2023 г. 18:20 в категории "Экономика".
+      </h1>
+      <li>
+        <a href="http://127.0.0.1:8000/post/new-article-1/">Перейти на статью "New Article -1"</a>
+      </li>
+      
+    </ul>
+  </body>
+</html>
+
+
+
+
+    
+--===============4753479708937903801==--
+
+-------------------------------------------------------------------------------

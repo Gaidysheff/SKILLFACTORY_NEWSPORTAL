@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'newsapp.apps.NewsappConfig',
     'rest_framework',
     "django_apscheduler",
-]
+    'django_celery_beat',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -193,3 +194,16 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+
+# CELERY_BEAT_SCHEDULE = {
+#     # "scheduled_task": {
+#     #     "task": 'newsapp.tasks.add',
+#     #     "schedule": 5.0,
+#     #     "args": (10, 10),
+#     # },
+#     "WEEKLY_NOTIFICATION": {
+#         "task": 'newsapp.tasks.send_weekly_notification_email',
+#         "schedule": 5.0,
+#     },
+# }
+
